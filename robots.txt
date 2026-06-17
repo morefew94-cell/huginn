@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hugin.studio/sitemap.xml
+Sitemap: https://huginn-nine.vercel.app/sitemap.xml
