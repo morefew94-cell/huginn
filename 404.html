@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Page not found — Huginn</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --void: #08090c;
+      --border: rgba(196, 206, 220, 0.12);
+      --silver: #c8d0dc;
+      --mist: #8a95a8;
+      --frost: #e8ecf2;
+      --accent: #9eb4d4;
+      --gold: #b8a06a;
+      --radius: 6px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: var(--silver);
+      background:
+        radial-gradient(ellipse 70% 50% at 50% -10%, rgba(158, 180, 212, 0.08), transparent 60%),
+        var(--void);
+    }
+    h1 {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: var(--frost);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    p { color: var(--mist); max-width: 40ch; margin: 0 auto 32px; line-height: 1.6; }
+    a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--void);
+      background: linear-gradient(135deg, #c4aa72 0%, #9a8450 100%);
+      text-decoration: none;
+      transition: filter 0.2s ease;
+    }
+    a:hover { filter: brightness(1.08); }
+    .wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 24px;
+    }
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin-bottom: 32px;
+      opacity: 0.9;
+    }
+    footer {
+      padding: 24px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mist);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <img class="logo" src="huginn-logo.png" alt="Huginn" width="120" height="120" />
+  <p class="mono">Error 404</p>
+  <h1>This page flew off.</h1>
+  <p>The page you're looking for doesn't exist or has been moved. Head back to the homepage to find your way.</p>
+  <a href="index.html">Back to home</a>
+</div>
+
+<footer>Huginn — web design &amp; development, sharpened.</footer>
+
+</body>
+</html>

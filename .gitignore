@@ -1,0 +1,10 @@
+.vercel
+.env
+.env.*
+
+# Old drafts and duplicate assets
+hone-landing-page.html
+Hugin-service-menu.md
+Hugin logo.png
+hugin-logo.png
+Huginn_Logo.png
