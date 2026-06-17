@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://huginn-nine.vercel.app/sitemap.xml
+Sitemap: https://www.huginnweb.com/sitemap.xml
