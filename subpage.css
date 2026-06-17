@@ -215,3 +215,47 @@ footer a { color: var(--accent); }
   .card-grid { grid-template-columns: 1fr; }
   .nav-cta { display: none; }
 }
+
+.article-meta {
+  color: var(--mist);
+  font-size: 0.85rem;
+  margin-bottom: 32px;
+}
+
+.article-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.article-card {
+  padding: 22px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.2s var(--ease);
+}
+
+.article-card:hover { border-color: var(--border-strong); }
+
+.article-card h2 {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+
+.article-card h2 a { color: var(--frost); }
+.article-card h2 a:hover { color: var(--gold); }
+
+.article-card p {
+  font-size: 0.9rem;
+  color: var(--mist);
+  margin: 0 0 10px;
+}
+
+.article-card .tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
