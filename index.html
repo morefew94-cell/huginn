@@ -1093,7 +1093,6 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      margin-top: 18px;
       font-weight: 600;
       font-size: 0.88rem;
       color: var(--accent);
@@ -1104,6 +1103,13 @@
     .work-link:hover {
       color: var(--gold);
       gap: 10px;
+    }
+
+    .work-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 18px;
     }
 
     .work-link::after {
@@ -1395,8 +1401,8 @@
 <header>
   <div class="wrap">
     <div class="nav">
-      <a class="brand" href="index.html" aria-label="Huginnn home">
-        <img src="huginn-logo.png" alt="Huginnn — web design and development" />
+      <a class="brand" href="index.html" aria-label="Huginn home">
+        <img src="huginn-logo.png" alt="Huginn — web design and development" />
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#work">Work</a>
@@ -1432,7 +1438,7 @@
 
       <div class="hero-visual reveal">
         <div class="hero-logo-frame">
-          <img src="huginn-logo.png" alt="Huginnn — custom web design and development" loading="eager" />
+          <img src="huginn-logo.png" alt="Huginn — custom web design and development" loading="eager" />
         </div>
         <div class="hero-stat-row">
           <div class="hero-stat">
@@ -1457,7 +1463,7 @@
       <div class="section-head reveal">
         <div class="section-label mono">Why most sites stall</div>
         <h2 id="diff-heading" class="section-title">Two traps. One way out.</h2>
-        <p class="section-desc">Builder tools cap what you can do. Big agencies price for retainers you don't need. Huginnn sits in the middle — custom builds, lean process, long-term ownership.</p>
+        <p class="section-desc">Builder tools cap what you can do. Big agencies price for retainers you don't need. Huginn sits in the middle — custom builds, lean process, long-term ownership.</p>
       </div>
       <div class="diff-grid">
         <article class="diff-card reveal">
@@ -1526,7 +1532,10 @@
               <div><strong>450+</strong><span>peak team mobilised</span></div>
               <div><strong>3</strong><span>portals on one platform</span></div>
             </div>
-            <a class="work-link" href="https://ibuildpm.com.au" target="_blank" rel="noopener noreferrer">View site</a>
+            <div class="work-links">
+              <a class="work-link" href="case-studies/ibuild-pm.html">Case study</a>
+              <a class="work-link" href="https://ibuildpm.com.au" target="_blank" rel="noopener noreferrer">View site</a>
+            </div>
           </div>
         </article>
 
@@ -1568,7 +1577,10 @@
               <div><strong>13</strong><span>integrated live registers</span></div>
               <div><strong>$297</strong><span>starting plan (AUD/mo)</span></div>
             </div>
-            <a class="work-link" href="https://veridianims.com" target="_blank" rel="noopener noreferrer">View site</a>
+            <div class="work-links">
+              <a class="work-link" href="case-studies/veridian-ims.html">Case study</a>
+              <a class="work-link" href="https://veridianims.com" target="_blank" rel="noopener noreferrer">View site</a>
+            </div>
           </div>
         </article>
       </div>
@@ -1727,12 +1739,12 @@
       </div>
       <div class="faq-list reveal">
         <details class="faq-item">
-          <summary>What types of businesses does Huginnn work with?</summary>
+          <summary>What types of businesses does Huginn work with?</summary>
           <p>Service businesses, SaaS and software companies, e-commerce brands, and professional services firms that need a custom site — not a template — with lead capture, SEO, and room to grow.</p>
         </details>
         <details class="faq-item">
           <summary>Do you work with clients in Australia and the United States?</summary>
-          <p>Yes. Huginnn is remote-first and works with clients across Australia and the United States. AUD pricing is available for Australian clients.</p>
+          <p>Yes. Huginn is remote-first and works with clients across Australia and the United States. AUD pricing is available for Australian clients.</p>
         </details>
         <details class="faq-item">
           <summary>How much does a custom website cost?</summary>
@@ -1808,9 +1820,16 @@
 <footer>
   <div class="wrap">
     <div class="brand-footer">
-      <img src="huginn-logo.png" alt="Huginnn" />
+      <img src="huginn-logo.png" alt="Huginn" />
     </div>
-    <p class="mono">Web design &amp; development, sharpened. · <a href="privacy.html">Privacy</a> · <a href="#faq">FAQ</a></p>
+    <p class="mono">Web design &amp; development, sharpened.</p>
+    <p class="mono" style="margin-top:10px;font-size:0.7rem;">
+      <a href="web-design-australia.html">Australia</a> ·
+      <a href="web-development-usa.html">USA</a> ·
+      <a href="saas-website-design.html">SaaS</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="#faq">FAQ</a>
+    </p>
   </div>
 </footer>
 
