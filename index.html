@@ -1320,18 +1320,6 @@
 
     footer a:hover { color: var(--gold); }
 
-    .contact-email a {
-      color: var(--frost);
-      text-decoration: none;
-      border-bottom: 1px solid var(--border-strong);
-      transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
-    }
-
-    .contact-email a:hover {
-      color: var(--gold);
-      border-bottom-color: var(--gold);
-    }
-
     /* ===== FAQ ===== */
     .faq {
       border-top: 1px solid var(--border);
@@ -1773,7 +1761,11 @@
         <p class="section-desc">A short, no-obligation outline of what your site should include and what it would cost — usually back within two business days.</p>
       </div>
       <div class="contact-layout">
-        <form class="form-card reveal" action="#" method="post" aria-label="Site plan request form">
+        <form class="form-card reveal" action="https://formsubmit.co/chris@huginn.com" method="POST" aria-label="Site plan request form">
+          <input type="hidden" name="_subject" value="Site plan request — Huginn website" />
+          <input type="hidden" name="_next" value="https://huginn-nine.vercel.app/#contact" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label class="mono" for="name">Your name</label>
             <input id="name" name="name" type="text" placeholder="Full name" required />
@@ -1802,10 +1794,6 @@
           <h3>What happens next</h3>
           <p>We'll reply with a short site plan — the pages we'd recommend, roughly what it'll cost, and how long it'll take.</p>
           <p>No obligation, no hard sell. If it's not the right fit, you'll still walk away with a clear plan.</p>
-          <div class="region contact-email">
-            <span class="mono">Email</span>
-            <p><a href="mailto:hello@hugin.studio">hello@hugin.studio</a></p>
-          </div>
           <div class="region">
             <span class="mono">Service area</span>
             <p>Remote-first — working with clients across Australia and the United States.</p>
