@@ -1289,6 +1289,33 @@
 
     .field textarea { resize: vertical; min-height: 96px; }
 
+    .field input[type="file"] {
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+
+    .field input[type="file"]::file-selector-button {
+      margin-right: 14px;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) - 2px);
+      background: var(--surface);
+      color: var(--silver);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .field-hint {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.78rem;
+      color: var(--mist);
+    }
+
     .contact-aside h3 {
       font-size: 1.1rem;
       margin-bottom: 16px;
@@ -1809,18 +1836,23 @@
         <p class="section-desc">A short, no-obligation outline of what your site should include and what it would cost — usually back within two business days.</p>
       </div>
       <div class="contact-layout">
-        <form class="form-card reveal" action="https://formsubmit.co/huginnweb1@gmail.com" method="POST" aria-label="Site plan request form">
+        <form class="form-card reveal" action="https://formsubmit.co/huginnweb1@gmail.com" method="POST" enctype="multipart/form-data" aria-label="Site plan request form">
           <input type="hidden" name="_subject" value="Site plan request — Huginn website" />
-          <input type="hidden" name="_next" value="https://www.huginnweb.com/#contact" />
+          <input type="hidden" name="_next" value="https://www.huginnweb.com/thank-you" />
           <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_autoresponse" value="Thank you for your enquiry. A member of the Huginn team will get back to you shortly." />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="field">
             <label class="mono" for="name">Your name</label>
-            <input id="name" name="name" type="text" placeholder="Full name" required />
+            <input id="name" name="name" type="text" placeholder="Full name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label class="mono" for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
           </div>
           <div class="field">
             <label class="mono" for="business">Business name</label>
-            <input id="business" name="business" type="text" placeholder="Trading name" />
+            <input id="business" name="business" type="text" placeholder="Trading name" autocomplete="organization" />
           </div>
           <div class="field">
             <label class="mono" for="trade">Industry / business type</label>
@@ -1835,6 +1867,11 @@
           <div class="field">
             <label class="mono" for="message">What do you need?</label>
             <textarea id="message" name="message" rows="4" placeholder="New site, redesign, ongoing care…"></textarea>
+          </div>
+          <div class="field">
+            <label class="mono" for="scope">Scope attachment</label>
+            <input id="scope" name="scope" type="file" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg,.webp" />
+            <span class="field-hint">Optional brief, sitemap, or reference doc — PDF, Word, or images, max 5MB.</span>
           </div>
           <button class="btn btn-primary" type="submit" style="width:100%;">Send request</button>
         </form>
