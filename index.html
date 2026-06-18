@@ -96,8 +96,7 @@
               "description": "Up to 5 pages, mobile-first design, lead capture, local SEO and analytics setup.",
               "priceSpecification": {
                 "@type": "PriceSpecification",
-                "minPrice": "1500",
-                "maxPrice": "2500",
+                "price": "2000",
                 "priceCurrency": "USD"
               }
             },
@@ -107,8 +106,7 @@
               "description": "Custom design, CMS, booking or signup flows, SEO and structured data.",
               "priceSpecification": {
                 "@type": "PriceSpecification",
-                "minPrice": "3000",
-                "maxPrice": "6000",
+                "price": "5000",
                 "priceCurrency": "USD"
               }
             },
@@ -118,8 +116,7 @@
               "description": "Bespoke Next.js builds with portals, payments, and SaaS or e-commerce integrations.",
               "priceSpecification": {
                 "@type": "PriceSpecification",
-                "minPrice": "8000",
-                "maxPrice": "15000",
+                "price": "12500",
                 "priceCurrency": "USD"
               }
             }
@@ -151,7 +148,7 @@
             "name": "How much does a custom website cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Build packages start from $1,500–$2,500 for a Starter site, $3,000–$6,000 for Growth (custom design and CMS), and $8,000–$15,000 for Pro bespoke builds with portals, payments, or SaaS integrations. Monthly care plans run from $99–$1,499 depending on scope."
+              "text": "Build packages are $2,000 for Starter, $5,000 for Growth (custom design and CMS), and $12,500 for Pro bespoke builds with portals, payments, or SaaS integrations. Monthly care plans run from $99–$1,249, with 6- and 12-month subscriptions available (12 months save 20%)."
             }
           },
           {
@@ -733,6 +730,39 @@
       font-size: 0.82rem;
       font-weight: 500;
       color: var(--mist);
+    }
+
+    .billing-toggle {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 4px;
+      margin-top: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .billing-toggle button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: calc(var(--radius) - 2px);
+      background: transparent;
+      color: var(--mist);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s var(--ease), color 0.2s var(--ease);
+    }
+
+    .billing-toggle button:hover { color: var(--frost); }
+
+    .billing-toggle button.active {
+      background: rgba(184, 160, 106, 0.15);
+      color: var(--gold);
     }
 
     .plan ul {
@@ -1599,7 +1629,7 @@
           <div class="plan-tier mono">Starter</div>
           <h3>Get found, get contacted</h3>
           <p class="plan-sub">A solid foundation for businesses ready to be discovered online.</p>
-          <div class="plan-price">$1,500 <small>– $2,500</small></div>
+          <div class="plan-price">$2,000</div>
           <ul>
             <li>Up to 5 pages</li>
             <li>Mobile-first design</li>
@@ -1615,7 +1645,7 @@
           <div class="plan-tier mono">Growth</div>
           <h3>Built to convert</h3>
           <p class="plan-sub">Custom design and flows that turn visitors into leads.</p>
-          <div class="plan-price">$3,000 <small>– $6,000</small></div>
+          <div class="plan-price">$5,000</div>
           <ul>
             <li>Custom design — no templates</li>
             <li>Blog / content management system</li>
@@ -1630,7 +1660,7 @@
           <div class="plan-tier mono">Pro</div>
           <h3>Custom-built platform</h3>
           <p class="plan-sub">For e-commerce, SaaS, and membership sites that need more.</p>
-          <div class="plan-price">$8,000 <small>– $15,000</small></div>
+          <div class="plan-price">$12,500</div>
           <ul>
             <li>Bespoke build (Next.js)</li>
             <li>Customer / member portals &amp; logins</li>
@@ -1647,16 +1677,21 @@
   <section id="care" class="care-section" aria-labelledby="care-heading">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="section-label mono">Care plans · Monthly · USD</div>
+        <div class="section-label mono">Care plans · USD</div>
         <h2 id="care-heading" class="section-title">The site keeps working after launch.</h2>
         <p class="section-desc">Hosting, security, and updates handled — so your site stays live, fast, and current without you thinking about it.</p>
+        <div class="billing-toggle" role="group" aria-label="Care plan billing period">
+          <button type="button" class="active" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" data-billing="6" aria-pressed="false">6 months</button>
+          <button type="button" data-billing="12" aria-pressed="false">12 months <small style="opacity:0.85">· save 20%</small></button>
+        </div>
       </div>
       <div class="pricing-grid">
         <article class="plan reveal">
           <div class="plan-tier mono">Essentials</div>
           <h3>Keep it running</h3>
           <p class="plan-sub">The basics covered so you can focus on your business.</p>
-          <div class="plan-price">$99 <small>– $149/mo</small></div>
+          <div class="plan-price care-price" data-care-price="99"><span class="care-amount">$99</span><small class="care-suffix">/mo</small></div>
           <ul>
             <li>Hosting &amp; domain management</li>
             <li>Security updates</li>
@@ -1671,7 +1706,7 @@
           <div class="plan-tier mono">Growth</div>
           <h3>Keep it current</h3>
           <p class="plan-sub">Regular updates and insight so the site keeps performing.</p>
-          <div class="plan-price">$299 <small>– $499/mo</small></div>
+          <div class="plan-price care-price" data-care-price="299"><span class="care-amount">$299</span><small class="care-suffix">/mo</small></div>
           <ul>
             <li>Monthly content updates</li>
             <li>SEO performance reporting</li>
@@ -1685,7 +1720,7 @@
           <div class="plan-tier mono">Partner</div>
           <h3>Outsourced digital team</h3>
           <p class="plan-sub">Ongoing optimisation and priority support when you need a partner.</p>
-          <div class="plan-price">$799 <small>– $1,499/mo</small></div>
+          <div class="plan-price care-price" data-care-price="1249"><span class="care-amount">$1,249</span><small class="care-suffix">/mo</small></div>
           <ul>
             <li>Ongoing optimisation</li>
             <li>Lead-generation campaigns</li>
@@ -1748,7 +1783,7 @@
         </details>
         <details class="faq-item">
           <summary>How much does a custom website cost?</summary>
-          <p>Build packages start from $1,500–$2,500 for Starter (up to 5 pages), $3,000–$6,000 for Growth (custom design and CMS), and $8,000–$15,000 for Pro bespoke builds. Monthly care plans run from $99–$1,499 depending on scope.</p>
+          <p>Build packages are $2,000 for Starter (up to 5 pages), $5,000 for Growth (custom design and CMS), and $12,500 for Pro bespoke builds. Care plans run from $99–$1,249/month, with 6- and 12-month subscriptions available (12 months save 20%).</p>
         </details>
         <details class="faq-item">
           <summary>What is included in a website care plan?</summary>
@@ -1867,6 +1902,44 @@
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
   );
   reveals.forEach(el => observer.observe(el));
+
+  const carePrices = document.querySelectorAll('[data-care-price]');
+  const billingBtns = document.querySelectorAll('[data-billing]');
+
+  function formatCarePrice(amount) {
+    return amount.toLocaleString('en-US');
+  }
+
+  function updateCarePrices(period) {
+    carePrices.forEach(el => {
+      const monthly = Number(el.dataset.carePrice);
+      const amountEl = el.querySelector('.care-amount');
+      const suffixEl = el.querySelector('.care-suffix');
+
+      if (period === 'monthly') {
+        amountEl.textContent = '$' + formatCarePrice(monthly);
+        suffixEl.textContent = '/mo';
+      } else if (period === '6') {
+        amountEl.textContent = '$' + formatCarePrice(monthly * 6);
+        suffixEl.textContent = '/6 mo';
+      } else {
+        amountEl.textContent = '$' + formatCarePrice(Math.round(monthly * 12 * 0.8));
+        suffixEl.textContent = '/yr';
+      }
+    });
+  }
+
+  billingBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      billingBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      updateCarePrices(btn.dataset.billing);
+    });
+  });
 </script>
 
 </body>
