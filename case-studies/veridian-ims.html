@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Case study: Veridian IMS — ISO compliance SaaS website with tiered pricing, Stripe checkout, and free trial. Built by Huginn." />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#08090c" />
   <meta name="google-site-verification" content="r3BlNP4yPdbvOc2dqCGIzokBrElt6f1NIe89Prdp2Hs" />
   <title>Veridian IMS Case Study | Huginn SaaS Web Design</title>
   <link rel="canonical" href="https://www.huginnweb.com/case-studies/veridian-ims" />
   <link rel="icon" href="../favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../subpage.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-24NZY2REEW"></script>
   <script>
@@ -23,10 +25,33 @@
 </head>
 <body>
 
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
 <header>
-  <div class="wrap-wide nav">
-    <a class="brand" href="../index.html" aria-label="Huginn home"><img src="../huginn-logo.png" alt="Huginn" /></a>
-    <a class="nav-cta" href="../index.html#contact">Request a site plan</a>
+  <div class="wrap-wide">
+    <div class="nav">
+      <a class="brand" href="../index.html" aria-label="Huginn home">
+        <img src="../huginn-logo.png" alt="Huginn — web design and development" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#packages">Build packages</a>
+        <a href="../index.html#care">Care plans</a>
+        <a href="../index.html#process">Process</a>
+        <a href="../blog/index.html">Blog</a>
+      </nav>
+      <a class="nav-cta" href="../index.html#contact">Request a site plan</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#packages">Build packages</a>
+      <a href="../index.html#care">Care plans</a>
+      <a href="../index.html#process">Process</a>
+      <a href="../blog/index.html">Blog</a>
+      <a href="../index.html#contact">Request a site plan</a>
+    </nav>
   </div>
 </header>
 
@@ -70,7 +95,7 @@
     </div>
 
     <div class="related">
-      <h2 class="mono" style="color:var(--accent);">Related</h2>
+      <h2>Related</h2>
       <ul>
         <li><a href="ibuild-pm.html">Case study: iBuild PM</a></li>
         <li><a href="../saas-website-design.html">SaaS website design</a></li>
@@ -81,8 +106,22 @@
 </main>
 
 <footer>
-  <div class="wrap"><p class="mono">Huginn — web design &amp; development, sharpened. · <a href="../privacy.html">Privacy</a></p></div>
+  <div class="wrap-wide">
+    <div class="brand-footer">
+      <img src="../huginn-logo.png" alt="Huginn" />
+    </div>
+    <p class="mono">Web design &amp; development, sharpened.</p>
+    <p class="mono footer-links">
+      <a href="../web-design-australia.html">Australia</a> ·
+      <a href="../web-development-usa.html">USA</a> ·
+      <a href="../saas-website-design.html">SaaS</a> ·
+      <a href="../blog/index.html">Blog</a> ·
+      <a href="../privacy.html">Privacy</a> ·
+      <a href="../index.html#faq">FAQ</a>
+    </p>
+  </div>
 </footer>
 
+<script src="../site-nav.js"></script>
 </body>
 </html>
