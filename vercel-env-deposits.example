@@ -1,0 +1,14 @@
+# Copy into Vercel → Settings → Environment Variables
+# Stripe Dashboard → Products → [product] → Pricing → Price ID (price_...)
+
+# Starter deposit — $20 (limited special)
+HUGINN_STRIPE_PRICE_STARTER_DEPOSIT=price_
+
+# Growth deposit — $150 (5% of $2,999)
+HUGINN_STRIPE_PRICE_GROWTH_DEPOSIT=price_
+
+# Pro deposit — $500 (5% of $9,999)
+HUGINN_STRIPE_PRICE_PRO_DEPOSIT=price_
+
+# Change window — $99 (10 business days, post-finalisation)
+HUGINN_STRIPE_PRICE_CHANGE_WINDOW=price_
