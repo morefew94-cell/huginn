@@ -13,14 +13,14 @@
       <button type="button" class="promo-close" data-promo-close aria-label="Close promotion">&times;</button>
       <span class="promo-label mono">Limited time offer</span>
       <h2 id="promo-title">Pay the domain fee. Get a website.</h2>
-      <p>Limited-time offer — pay just the domain registration fee and we'll build your Starter site. Up to 5 pages, mobile-first design, lead capture, SEO and analytics setup included.</p>
+      <p>Limited-time offer — pay just the domain registration fee and we'll build your tier 1 Starter site. Up to 5 pages, mobile-first design, lead capture, and SEO setup. Domain and going live included — you own the site.</p>
       <div class="promo-price">
         <span class="was">$499</span>
         <span class="now">$20</span>
-        <span class="note">Domain fee only · limited time · 1st-year domain included</span>
+        <span class="note">Deposit · domain + going live · ~20 business days</span>
       </div>
       <div class="promo-actions">
-        <a class="btn-primary" href="/#contact">Claim the special</a>
+        <a class="btn-primary" href="https://buy.stripe.com/REPLACE_STARTER_DEPOSIT_20">Make a $20 deposit</a>
         <a class="btn-ghost" href="/#packages">View packages</a>
       </div>
     </div>

@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Custom web design for Australian businesses. Mobile-first sites with lead capture, local SEO, and ongoing care. Remote-first studio — AUD pricing available." />
+  <meta name="description" content="Custom web design for Australian businesses. Mobile-first sites with lead capture, local SEO, domain and hosting included. Remote-first studio — AUD pricing available." />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#08090c" />
   <meta name="google-site-verification" content="r3BlNP4yPdbvOc2dqCGIzokBrElt6f1NIe89Prdp2Hs" />
   <title>Custom Web Design Australia | Huginn</title>
   <link rel="canonical" href="https://www.huginnweb.com/web-design-australia" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-promo.css" />
-  <!-- Google tag (gtag.js) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="subpage.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-24NZY2REEW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,10 +24,31 @@
 </head>
 <body>
 
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
 <header>
-  <div class="wrap-wide nav">
-    <a class="brand" href="index.html" aria-label="Huginn home"><img src="huginn-logo.png" alt="Huginn" /></a>
-    <a class="nav-cta" href="index.html#contact">Request a site plan</a>
+  <div class="wrap-wide">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Huginn home"><img src="huginn-logo.png" alt="Huginn" /></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#packages">Build packages</a>
+        <a href="index.html#care">Care plans</a>
+        <a href="index.html#process">Process</a>
+        <a href="blog/index.html">Blog</a>
+      </nav>
+      <a class="nav-cta" href="index.html#packages">Make a deposit</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#packages">Build packages</a>
+      <a href="index.html#care">Care plans</a>
+      <a href="index.html#process">Process</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="index.html#packages">Make a deposit</a>
+    </nav>
   </div>
 </header>
 
@@ -38,7 +59,7 @@
     <div class="page-hero">
       <span class="mono label">Australia · Remote-first</span>
       <h1>Custom web design for Australian businesses</h1>
-      <p class="lead">Huginn builds mobile-first websites for Australian service businesses, SaaS companies, and online stores — with local SEO setup, lead capture, and AUD pricing. No templates. No agency overhead.</p>
+      <p class="lead">Huginn builds mobile-first websites for Australian service businesses, SaaS companies, and online stores — with local SEO setup, lead capture, domain, and hosting included. You own the site. No templates. No agency overhead.</p>
     </div>
 
     <h2>Built for how Australian businesses win work</h2>
@@ -59,7 +80,7 @@
       </div>
       <div class="card">
         <h3>Local SEO from day one</h3>
-        <p>Search Console setup, structured data, and analytics — so you can see what's working from launch.</p>
+        <p>Search Console setup and structured data — so your site can be found from launch.</p>
       </div>
     </div>
 
@@ -67,24 +88,27 @@
     <ul>
       <li>Mobile-first responsive design</li>
       <li>Lead capture and contact forms</li>
-      <li>Google Search Console and analytics setup</li>
-      <li>On-page SEO and structured data</li>
-      <li>Optional monthly care plans for hosting, updates, and reporting</li>
+      <li>Google Search Console and on-page SEO setup</li>
+      <li>Domain registration and getting your site live on the internet</li>
+      <li>Hosting through Huginn or self-host handover — you choose</li>
+      <li>Optional extras — logo design, copywriting, brand kit, and more</li>
+      <li>Optional care plans for ongoing updates, or a one-off $99 change window (10 business days) after finalisation</li>
     </ul>
 
-    <h2>Pricing</h2>
-    <p>Build packages start from <strong>$20</strong> for Starter during our limited special (domain cost only — regular <strong>$499</strong>), <strong>$2,999</strong> for Growth, and <strong>$9,999</strong> for bespoke Pro builds with SaaS, portals, and integrations. Care plans from $99–$1,249/month, with 6- and 12-month subscriptions available. A free site plan outlines pages, cost, and timeline before any design starts.</p>
+    <h2>Pricing &amp; deposits</h2>
+    <p>Build packages start from <strong>$20 deposit</strong> for Starter during our limited special (regular <strong>$499</strong>), <strong>$50 deposit</strong> for Growth at <strong>$2,999</strong>, and <strong>$100 deposit</strong> for Pro at <strong>$9,999</strong>. Care plans from $99–$1,249/month if you need ongoing updates. Starter builds take ~20 business days (10 draft + 10 revisions).</p>
 
     <div class="btn-row">
-      <a class="btn-primary" href="index.html#contact">Get a free site plan</a>
-      <a class="btn-ghost" href="index.html#packages">View packages</a>
+      <a class="btn-primary" href="index.html#packages">Make a deposit</a>
+      <a class="btn-ghost" href="index.html#faq">Read FAQ</a>
     </div>
 
     <div class="related">
-      <h2 class="mono" style="color:var(--accent);">Related</h2>
+      <h2>Related</h2>
       <ul>
         <li><a href="web-development-usa.html">Web development for US businesses</a></li>
         <li><a href="saas-website-design.html">SaaS website design</a></li>
+        <li><a href="case-studies/butterfly-beauty.html">Case study: Butterfly Beauty</a></li>
         <li><a href="case-studies/ibuild-pm.html">Case study: iBuild PM</a></li>
       </ul>
     </div>
@@ -92,9 +116,20 @@
 </main>
 
 <footer>
-  <div class="wrap"><p class="mono">Huginn — web design &amp; development, sharpened. · <a href="privacy.html">Privacy</a></p></div>
+  <div class="wrap-wide">
+    <div class="brand-footer"><img src="huginn-logo.png" alt="Huginn" /></div>
+    <p class="mono">Web design &amp; development, sharpened.</p>
+    <p class="mono footer-links">
+      <a href="web-design-australia.html">Australia</a> ·
+      <a href="web-development-usa.html">USA</a> ·
+      <a href="saas-website-design.html">SaaS</a> ·
+      <a href="blog/index.html">Blog</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="index.html#faq">FAQ</a>
+    </p>
+  </div>
 </footer>
 
-<script src="site-promo.js"></script>
+<script src="site-nav.js"></script>
 </body>
 </html>

@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="SaaS website design and development. Product landing pages, pricing, trial signup, Stripe checkout, and Next.js builds. Huginn — Australia &amp; US." />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#08090c" />
   <meta name="google-site-verification" content="r3BlNP4yPdbvOc2dqCGIzokBrElt6f1NIe89Prdp2Hs" />
   <title>SaaS Website Design &amp; Development | Huginn</title>
   <link rel="canonical" href="https://www.huginnweb.com/saas-website-design" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-promo.css" />
-  <!-- Google tag (gtag.js) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="subpage.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-24NZY2REEW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,10 +24,31 @@
 </head>
 <body>
 
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
 <header>
-  <div class="wrap-wide nav">
-    <a class="brand" href="index.html" aria-label="Huginn home"><img src="huginn-logo.png" alt="Huginn" /></a>
-    <a class="nav-cta" href="index.html#contact">Request a site plan</a>
+  <div class="wrap-wide">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Huginn home"><img src="huginn-logo.png" alt="Huginn" /></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#packages">Build packages</a>
+        <a href="index.html#care">Care plans</a>
+        <a href="index.html#process">Process</a>
+        <a href="blog/index.html">Blog</a>
+      </nav>
+      <a class="nav-cta" href="index.html#packages">Make a deposit</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#packages">Build packages</a>
+      <a href="index.html#care">Care plans</a>
+      <a href="index.html#process">Process</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="index.html#packages">Make a deposit</a>
+    </nav>
   </div>
 </header>
 
@@ -38,7 +59,7 @@
     <div class="page-hero">
       <span class="mono label">SaaS · B2B software</span>
       <h1>SaaS website design that converts trials into revenue</h1>
-      <p class="lead">Product marketing sites built for SaaS and software companies — clear positioning, tiered pricing, demo and trial flows, and the technical depth to integrate with your stack.</p>
+      <p class="lead">Product marketing sites built for SaaS and software companies — clear positioning, tiered pricing, demo and trial flows, and the technical depth to integrate with your stack. You own the site at handover.</p>
     </div>
 
     <h2>What SaaS sites need (that templates miss)</h2>
@@ -55,7 +76,7 @@
       </div>
       <div class="card">
         <h3>Lead capture</h3>
-        <p>Demo requests, checklist downloads, and CRM-connected forms with proper tracking.</p>
+        <p>Demo requests, checklist downloads, and CRM-connected forms.</p>
       </div>
       <div class="card">
         <h3>Technical builds</h3>
@@ -68,18 +89,18 @@
 
     <h2>Packages for SaaS</h2>
     <ul>
-      <li><strong>Growth</strong> ($2,999) — custom design, CMS, signup flows, SEO &amp; structured data</li>
-      <li><strong>Pro</strong> ($9,999) — Next.js, Stripe, portals, CRM &amp; API integrations</li>
-      <li><strong>Partner care plan</strong> ($1,249/mo) — ongoing optimisation, content updates, and conversion reporting</li>
+      <li><strong>Growth</strong> ($2,999) — <strong>$50 deposit</strong> · custom design, CMS, signup flows, SEO &amp; structured data</li>
+      <li><strong>Pro</strong> ($9,999) — <strong>$100 deposit</strong> · Next.js, Stripe, portals, CRM &amp; API integrations</li>
+      <li><strong>Partner care plan</strong> ($1,249/mo) — optional · ongoing optimisation, content updates, and performance reporting if you plan to keep iterating</li>
     </ul>
 
     <div class="btn-row">
-      <a class="btn-primary" href="index.html#contact">Get a free site plan</a>
+      <a class="btn-primary" href="index.html#packages">Make a deposit</a>
       <a class="btn-ghost" href="case-studies/veridian-ims.html">View Veridian IMS case study</a>
     </div>
 
     <div class="related">
-      <h2 class="mono" style="color:var(--accent);">Related</h2>
+      <h2>Related</h2>
       <ul>
         <li><a href="web-design-australia.html">Web design Australia</a></li>
         <li><a href="web-development-usa.html">Web development USA</a></li>
@@ -90,9 +111,20 @@
 </main>
 
 <footer>
-  <div class="wrap"><p class="mono">Huginn — web design &amp; development, sharpened. · <a href="privacy.html">Privacy</a></p></div>
+  <div class="wrap-wide">
+    <div class="brand-footer"><img src="huginn-logo.png" alt="Huginn" /></div>
+    <p class="mono">Web design &amp; development, sharpened.</p>
+    <p class="mono footer-links">
+      <a href="web-design-australia.html">Australia</a> ·
+      <a href="web-development-usa.html">USA</a> ·
+      <a href="saas-website-design.html">SaaS</a> ·
+      <a href="blog/index.html">Blog</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="index.html#faq">FAQ</a>
+    </p>
+  </div>
 </footer>
 
-<script src="site-promo.js"></script>
+<script src="site-nav.js"></script>
 </body>
 </html>

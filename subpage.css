@@ -358,6 +358,19 @@ main > .wrap > p > a:hover,
 .related a { color: var(--accent); }
 .related a:hover { color: var(--gold); }
 
+.case-shot {
+  margin: 32px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.case-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== FOOTER ===== */
 footer {
   position: relative;

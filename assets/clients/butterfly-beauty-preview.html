@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(180deg, #fdf8f6 0%, #f5ebe6 100%);
+      color: #3d2c2e;
+      min-height: 900px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid rgba(61,44,46,0.08);
+    }
+    .logo { font-size: 1.4rem; letter-spacing: 0.08em; }
+    nav { display: flex; gap: 28px; font-family: system-ui, sans-serif; font-size: 0.85rem; }
+    .hero {
+      padding: 80px 48px;
+      max-width: 640px;
+    }
+    h1 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 20px; font-weight: 400; }
+    p { font-family: system-ui, sans-serif; font-size: 1.05rem; line-height: 1.6; color: #6b5254; margin-bottom: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #c9a0a8;
+      color: #fff;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Butterfly Beauty</div>
+    <nav><span>Services</span><span>About</span><span>Book</span><span>Contact</span></nav>
+  </header>
+  <section class="hero">
+    <h1>Beauty treatments that feel effortless.</h1>
+    <p>Mobile-first site for a local beauty studio — services, booking, and contact in one clean experience.</p>
+    <span class="btn">Book an appointment</span>
+  </section>
+</body>
+</html>

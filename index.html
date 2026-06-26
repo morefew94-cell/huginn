@@ -21,7 +21,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Huginn" />
   <meta property="og:title" content="Custom Web Design &amp; Development | Huginn" />
-  <meta property="og:description" content="Custom websites for service businesses, SaaS and e-commerce. Mobile-first design, analytics, and ongoing care. Serving Australia and the United States." />
+  <meta property="og:description" content="Custom websites for service businesses, SaaS and e-commerce. Mobile-first design, SEO setup, and optional care plans. Serving Australia and the United States." />
   <meta property="og:url" content="https://www.huginnweb.com/" />
   <meta property="og:image" content="https://www.huginnweb.com/og-image.png" />
   <meta property="og:image:width" content="512" />
@@ -67,7 +67,7 @@
           "@type": "ImageObject",
           "url": "https://www.huginnweb.com/huginn-logo.png"
         },
-        "description": "Web design and development studio building custom websites for service businesses, SaaS products, and online stores. Packages include mobile-first design, lead capture, SEO setup, analytics, and monthly care plans.",
+        "description": "Web design and development studio building custom websites for service businesses, SaaS products, and online stores. Packages include mobile-first design, lead capture, SEO setup, and optional care plans.",
         "areaServed": [
           { "@type": "Country", "name": "Australia" },
           { "@type": "Country", "name": "United States" }
@@ -93,7 +93,7 @@
             {
               "@type": "Offer",
               "name": "Starter build package",
-              "description": "Up to 5 pages, mobile-first design, lead capture, local SEO and analytics setup.",
+              "description": "Tier 1 website up to 5 pages. Includes domain (1st year), hosting setup, and going live. ~20 business days. Customer owns the site.",
               "priceSpecification": {
                 "@type": "PriceSpecification",
                 "price": "20",
@@ -130,6 +130,38 @@
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "What is included in the Starter (tier 1) website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Up to 5 pages, mobile-first design, lead capture, and SEO setup. Includes domain (first year), hosting setup, and going live. ~20 business days: 10 days working draft, 10 days unlimited revisions. Customer owns the site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I own my website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You own the site outright once complete and paid. After finalisation, changes require a care plan or a one-off $99 change window (10 business days)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When do I need a care plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only if you plan to update your site regularly. A one-off $99 change window (10 business days) is available without a care plan for occasional edits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do deposits work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deposits secure your build slot: $20 Starter, $50 Growth, $100 Pro via Stripe. Balance due before launch."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "What types of businesses does Huginn work with?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -149,15 +181,7 @@
             "name": "How much does a custom website cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Build packages start from $20 for Starter during our limited special (domain cost only — regular $499), $2,999 for Growth (custom design and CMS), and $9,999 for Pro bespoke builds with portals, payments, or SaaS integrations. Monthly care plans run from $99–$1,249, with 6- and 12-month subscriptions available (12 months save 20%)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is included in a website care plan?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Care plans cover hosting, security updates, backups, and uptime monitoring at the Essentials tier. Growth adds monthly content updates, SEO reporting, and analytics review. Partner includes ongoing optimisation, lead-generation support, and priority changes."
+              "text": "Build packages start from $20 for Starter during our limited special (regular $499), $2,999 for Growth, and $9,999 for Pro. Care plans from $99–$1,249/month if you need ongoing updates."
             }
           },
           {
@@ -165,15 +189,15 @@
             "name": "How long does a website build take?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most builds follow a four-stage process: survey, plan, build, and handover. Timeline depends on package and scope — Starter sites are typically faster; Pro builds with custom functionality take longer. A site plan outlines pages, cost, and timeline before design starts."
+              "text": "Starter builds take approximately 20 business days — 10 days for a working draft, then 10 days for unlimited revisions."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Huginn build e-commerce and SaaS websites?",
+            "name": "Do you build e-commerce and SaaS websites?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Growth packages support booking, quote, and signup flows. Pro packages include bespoke Next.js builds for e-commerce, SaaS products, membership sites, customer portals, and integrations with payments, CRM, and third-party tools."
+              "text": "Yes. Growth packages support booking, quote, and signup flows. Pro packages include bespoke Next.js builds for e-commerce, SaaS products, membership sites, customer portals, and integrations."
             }
           }
         ]
@@ -187,6 +211,15 @@
             "position": 1,
             "item": {
               "@type": "CreativeWork",
+              "name": "Butterfly Beauty",
+              "description": "Tier 1 Starter website for a local beauty studio — mobile-first design, enquiry capture, domain and hosting included."
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
               "name": "iBuild PM",
               "url": "https://ibuildpm.com.au",
               "description": "Industrial personnel supply and project delivery website with careers, investor, and staff portals."
@@ -194,7 +227,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 2,
+            "position": 3,
             "item": {
               "@type": "CreativeWork",
               "name": "Veridian IMS",
@@ -874,6 +907,72 @@
       border-top: 1px solid var(--border);
     }
 
+    /* ===== EXTRAS ===== */
+    .extras-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .extra-card {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      transition: border-color 0.25s var(--ease);
+    }
+
+    .extra-card:hover { border-color: var(--border-strong); }
+
+    .extra-card h3 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .extra-price {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .extra-card p {
+      font-size: 0.84rem;
+      color: var(--mist);
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .extras-footnote {
+      margin-top: 24px;
+      font-size: 0.82rem;
+      color: var(--mist);
+      text-align: center;
+    }
+
+    .extras-footnote a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .extras-footnote a:hover { color: var(--gold); }
+
+    @media (max-width: 900px) {
+      .extras-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .extras-grid { grid-template-columns: 1fr; }
+    }
+
     @media (max-width: 900px) {
       .pricing-grid { grid-template-columns: 1fr; }
       .plan.featured { order: -1; }
@@ -1198,9 +1297,68 @@
       content: '→';
     }
 
-    .portfolio-grid.duo .work-card.featured {
-      grid-column: span 1;
+    .portfolio-grid.trio {
       grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .browser-screen-shot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .browser-screen.browser-screen-shot {
+      aspect-ratio: 16 / 10;
+      padding: 0;
+      background: #0a0c10;
+    }
+
+    .client-logos {
+      padding: 48px 0 0;
+      text-align: center;
+    }
+
+    .client-logos .section-label {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .client-logos .section-label::after { display: none; }
+
+    .client-logos-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 32px 48px;
+    }
+
+    .client-logos-row img {
+      height: 44px;
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      opacity: 0.82;
+      filter: grayscale(20%);
+    }
+
+    .plan-includes-note {
+      font-size: 0.78rem;
+      color: var(--mist);
+      margin: -12px 0 20px;
+      line-height: 1.5;
+    }
+
+    .plan-deposit-hint {
+      display: block;
+      margin-top: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--mist);
     }
 
     .portfolio-grid.duo .work-card.featured .work-preview {
@@ -1516,18 +1674,20 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#packages">Build packages</a>
+        <a href="#extras">Extras</a>
         <a href="#care">Care plans</a>
         <a href="#process">Process</a>
       </nav>
-      <a class="nav-cta" href="#contact">Request a site plan</a>
+      <a class="nav-cta" href="#packages">Make a deposit</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
     </div>
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
       <a href="#work">Work</a>
       <a href="#packages">Build packages</a>
+      <a href="#extras">Extras</a>
       <a href="#care">Care plans</a>
       <a href="#process">Process</a>
-      <a href="#contact">Request a site plan</a>
+      <a href="#packages">Make a deposit</a>
     </nav>
   </div>
 </header>
@@ -1540,8 +1700,8 @@
         <h1>Web design &amp; development, <em>sharpened</em>.</h1>
         <p class="hero-lead">Custom websites for service businesses, SaaS, and online stores — designed and built on a real technical foundation, so your site can grow with you. No templates. No agency overhead.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Get a free site plan</a>
-          <a class="btn btn-ghost" href="#packages">View packages</a>
+          <a class="btn btn-primary" href="#packages">Make a deposit</a>
+          <a class="btn btn-ghost" href="#faq">Read FAQ</a>
         </div>
       </div>
 
@@ -1568,8 +1728,19 @@
   </section>
 
   <div class="promo-strip wrap reveal">
-    <p class="mono"><strong>Limited special</strong> Starter website for domain cost only — <strong style="color:var(--frost);font-weight:600;">$20</strong> (1st-year domain included). <a href="#packages">View Starter package</a></p>
+    <p class="mono"><strong>Limited special</strong> Tier 1 Starter website — domain + going live for <strong style="color:var(--frost);font-weight:600;">$20</strong> deposit (regular $499). <a href="#packages">View Starter package</a></p>
   </div>
+
+  <section class="client-logos" aria-label="Selected clients">
+    <div class="wrap reveal">
+      <div class="section-label mono">Selected clients</div>
+      <div class="client-logos-row">
+        <img src="assets/clients/butterfly-beauty-logo.svg" alt="Butterfly Beauty" width="160" height="44" loading="lazy" />
+        <img src="assets/clients/ibuild-pm-logo.png" alt="iBuild PM" width="160" height="44" loading="lazy" />
+        <img src="assets/clients/veridian-ims-logo.png" alt="Veridian IMS" width="160" height="44" loading="lazy" />
+      </div>
+    </div>
+  </section>
 
   <section class="diff" aria-labelledby="diff-heading">
     <div class="wrap">
@@ -1603,11 +1774,44 @@
       <div class="section-head reveal">
         <div class="section-label mono">Selected work</div>
         <h2 id="work-heading" class="section-title">Sites built to perform.</h2>
-        <p class="section-desc">Recent builds for industrial services and compliance SaaS — scoped to how each client wins work and runs operations day to day.</p>
+        <p class="section-desc">From tier 1 service sites to bespoke SaaS platforms — scoped to how each client wins work and runs day to day.</p>
       </div>
 
-      <div class="portfolio-grid duo">
-        <article class="work-card featured reveal">
+      <div class="portfolio-grid trio">
+        <article class="work-card reveal">
+          <div class="work-preview">
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-url">butterflybeauty.com.au</span>
+              </div>
+              <div class="browser-screen browser-screen-shot">
+                <img src="assets/clients/butterfly-beauty-screenshot.png" alt="Butterfly Beauty website homepage" loading="lazy" width="1200" height="675" />
+              </div>
+            </div>
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span class="work-tag">Beauty &amp; wellness</span>
+              <span class="work-tag">Australia</span>
+              <span class="work-tag">Starter · Tier 1</span>
+            </div>
+            <h3>Butterfly Beauty</h3>
+            <p>A tier 1 service business site — mobile-first design, service pages, and enquiry capture for a local beauty studio. Domain registered, hosted, and live on the internet. The client owns the site outright.</p>
+            <div class="work-stats">
+              <div><strong>5</strong><span>pages</span></div>
+              <div><strong>20</strong><span>business days</span></div>
+              <div><strong>100%</strong><span>client-owned</span></div>
+            </div>
+            <div class="work-links">
+              <a class="work-link" href="case-studies/butterfly-beauty.html">Case study</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
           <div class="work-preview">
             <div class="browser">
               <div class="browser-bar">
@@ -1616,19 +1820,8 @@
                 <span class="browser-dot"></span>
                 <span class="browser-url">ibuildpm.com.au</span>
               </div>
-              <div class="browser-screen theme-ibuild">
-                <div class="screen-layout">
-                  <div class="screen-nav">
-                    <span class="screen-logo"></span>
-                    <div class="screen-links"><span></span><span></span><span></span></div>
-                  </div>
-                  <div class="screen-hero">
-                    <span class="h"></span>
-                    <span class="p"></span>
-                    <span class="btn-block"></span>
-                  </div>
-                  <div class="screen-cards"><span></span><span></span><span></span></div>
-                </div>
+              <div class="browser-screen browser-screen-shot">
+                <img src="assets/clients/ibuild-pm-screenshot.png" alt="iBuild PM website homepage" loading="lazy" width="1200" height="675" />
               </div>
             </div>
           </div>
@@ -1652,7 +1845,7 @@
           </div>
         </article>
 
-        <article class="work-card featured reveal">
+        <article class="work-card reveal">
           <div class="work-preview">
             <div class="browser">
               <div class="browser-bar">
@@ -1661,19 +1854,8 @@
                 <span class="browser-dot"></span>
                 <span class="browser-url">veridianims.com</span>
               </div>
-              <div class="browser-screen theme-veridian">
-                <div class="screen-layout">
-                  <div class="screen-nav">
-                    <span class="screen-logo"></span>
-                    <div class="screen-links"><span></span><span></span><span></span></div>
-                  </div>
-                  <div class="screen-hero">
-                    <span class="h"></span>
-                    <span class="p"></span>
-                    <span class="btn-block"></span>
-                  </div>
-                  <div class="screen-chart"></div>
-                </div>
+              <div class="browser-screen browser-screen-shot">
+                <img src="assets/clients/veridian-ims-screenshot.png" alt="Veridian IMS website homepage" loading="lazy" width="1200" height="675" />
               </div>
             </div>
           </div>
@@ -1705,27 +1887,31 @@
       <div class="section-head reveal">
         <div class="section-label mono">Build packages · One-off · USD</div>
         <h2 id="packages-heading" class="section-title">Built around how you grow.</h2>
-        <p class="section-desc">Every build includes mobile-first design, lead capture, analytics, and search setup from day one. Starter tier 1 is currently on special for domain cost only. AUD pricing available for Australian clients.</p>
+        <p class="section-desc">Every build includes mobile-first design, lead capture, and search setup from day one. Domain registration and getting your site live on the internet are included in the one-off fee. You own the site — after finalisation, changes require a care plan or a one-off $99 change window (10 business days).</p>
       </div>
       <div class="pricing-grid">
         <article class="plan reveal">
           <span class="plan-badge">Limited special</span>
-          <div class="plan-tier mono">Starter</div>
+          <div class="plan-tier mono">Starter · Tier 1</div>
           <h3>Get found, get contacted</h3>
           <p class="plan-sub">A solid foundation for businesses ready to be discovered online.</p>
           <div class="plan-price plan-price-special">
             <span class="price-was">$499</span>
             $20
-            <small class="plan-promo-note">Domain cost only · 1st-year domain included</small>
+            <small class="plan-promo-note">Domain + going live · 1st-year domain included</small>
           </div>
+          <p class="plan-includes-note">~20 business days · 10 days working draft, 10 days unlimited revisions · hosted through Huginn or self-host handover</p>
           <ul>
             <li>Up to 5 pages</li>
             <li>Mobile-first design</li>
             <li>Lead capture / contact forms</li>
             <li>Search console &amp; local SEO setup</li>
-            <li>Analytics &amp; conversion tracking</li>
+            <li>Domain registration (1st year)</li>
+            <li>Hosted and live on the internet</li>
+            <li>You own the site outright</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_STARTER_DEPOSIT_20" data-stripe-deposit="starter">Make a $20 deposit</a>
+          <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
 
         <article class="plan featured reveal">
@@ -1734,6 +1920,7 @@
           <h3>Built to convert</h3>
           <p class="plan-sub">Custom design and flows that turn visitors into leads.</p>
           <div class="plan-price">$2,999</div>
+          <p class="plan-includes-note">Domain, hosting setup, and going live included · you own the site</p>
           <ul>
             <li>Custom design — no templates</li>
             <li>Blog / content management system</li>
@@ -1741,7 +1928,8 @@
             <li>SEO &amp; structured data</li>
             <li>Everything in Starter</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_GROWTH_DEPOSIT_50" data-stripe-deposit="growth">Make a $50 deposit</a>
+          <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
 
         <article class="plan reveal">
@@ -1749,6 +1937,7 @@
           <h3>Custom-built platform</h3>
           <p class="plan-sub">For e-commerce, SaaS, and membership sites that need more.</p>
           <div class="plan-price">$9,999</div>
+          <p class="plan-includes-note">Domain, hosting setup, and going live included · you own the site</p>
           <ul>
             <li>Bespoke build (Next.js)</li>
             <li>Customer / member portals &amp; logins</li>
@@ -1756,9 +1945,68 @@
             <li>E-commerce, SaaS or membership ready</li>
             <li>Everything in Growth</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_PRO_DEPOSIT_100" data-stripe-deposit="pro">Make a $100 deposit</a>
+          <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="extras" class="extras-section" aria-labelledby="extras-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-label mono">Add-ons · USD</div>
+        <h2 id="extras-heading" class="section-title">Extras for your build.</h2>
+        <p class="section-desc">Optional add-ons bolted onto any package — we quote them upfront and add them to your build invoice. Pay the deposit first to secure your slot; extras and balance are invoiced before work starts.</p>
+      </div>
+      <div class="extras-grid">
+        <article class="extra-card reveal">
+          <h3>Logo design</h3>
+          <div class="extra-price">from $99</div>
+          <p>Three initial concepts, two revision rounds, and final vector files (SVG, PNG) ready for web and print.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Brand kit</h3>
+          <div class="extra-price">from $599</div>
+          <p>Logo plus colour palette, typography, and social profile assets — a consistent look across your site and channels.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Copywriting</h3>
+          <div class="extra-price">from $99<span style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--mist);"> / page</span></div>
+          <p>Professional web copy written for your audience — homepage, services, about, and key landing pages.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Extra pages</h3>
+          <div class="extra-price">from $199<span style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--mist);"> / page</span></div>
+          <p>Additional pages beyond your package allowance — service areas, team bios, FAQs, or landing pages.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Stock photography</h3>
+          <div class="extra-price">from $149</div>
+          <p>Licensed stock imagery curated and edited to match your brand — no generic placeholder photos.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Business email</h3>
+          <div class="extra-price">from $99</div>
+          <p>Professional email addresses on your domain (e.g. hello@yourbusiness.com) — setup and configuration included.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Google Business Profile</h3>
+          <div class="extra-price">from $149</div>
+          <p>Listing setup, verification support, and local profile optimisation so customers can find you on Maps.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Booking integration</h3>
+          <div class="extra-price">from $249</div>
+          <p>Connect Calendly, Acuity, or similar — embedded booking flows wired into your contact and service pages.</p>
+        </article>
+        <article class="extra-card reveal">
+          <h3>Custom request</h3>
+          <div class="extra-price">Quote</div>
+          <p>Photography direction, illustrations, multilingual pages, or something else — tell us what you need and we'll price it.</p>
+        </article>
+      </div>
+      <p class="extras-footnote reveal">Extras go on your build invoice — not a separate checkout. Tell us what you need via the <a href="#contact">contact form</a> and we'll include them in your quote before design starts.</p>
     </div>
   </section>
 
@@ -1767,7 +2015,7 @@
       <div class="section-head reveal">
         <div class="section-label mono">Care plans · USD</div>
         <h2 id="care-heading" class="section-title">The site keeps working after launch.</h2>
-        <p class="section-desc">Hosting, security, and updates handled — so your site stays live, fast, and current without you thinking about it.</p>
+        <p class="section-desc">Care plans are optional for ongoing updates. After your site is finalised, no further changes are included — purchase a care plan for ongoing work, or a one-off <strong>$99 change window</strong> (10 business days) if you only need a short round of edits.</p>
         <div class="billing-toggle" role="group" aria-label="Care plan billing period">
           <button type="button" class="active" data-billing="monthly" aria-pressed="true">Monthly</button>
           <button type="button" data-billing="6" aria-pressed="false">6 months</button>
@@ -1786,7 +2034,7 @@
             <li>Daily backups</li>
             <li>Uptime monitoring</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="#contact">Get Essentials</a>
         </article>
 
         <article class="plan featured reveal">
@@ -1798,10 +2046,10 @@
           <ul>
             <li>Monthly content updates</li>
             <li>SEO performance reporting</li>
-            <li>Analytics review &amp; recommendations</li>
+            <li>Conversion &amp; performance review</li>
             <li>Everything in Essentials</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="#contact">Get Growth</a>
         </article>
 
         <article class="plan reveal">
@@ -1815,7 +2063,7 @@
             <li>Priority support &amp; changes</li>
             <li>Everything in Growth</li>
           </ul>
-          <a class="plan-cta" href="#contact">Enquire</a>
+          <a class="plan-cta" href="#contact">Get Partner</a>
         </article>
       </div>
     </div>
@@ -1847,7 +2095,7 @@
         <div class="step reveal">
           <div class="step-num">4</div>
           <h3>Handover</h3>
-          <p>Live, tracked, and either handed to you or rolled into an ongoing care plan.</p>
+          <p>Live on the internet with domain and hosting in place. You own the site — ongoing updates via a care plan, or a $99 change window if you need edits later.</p>
         </div>
       </div>
     </div>
@@ -1862,6 +2110,26 @@
       </div>
       <div class="faq-list reveal">
         <details class="faq-item">
+          <summary>What is included in the Starter (tier 1) website?</summary>
+          <p>Up to 5 pages, mobile-first design, lead capture forms, and search console / local SEO setup. The one-off fee includes domain registration (first year), hosting setup, and getting your site live on the internet. Hosting can be through Huginn or handed over if you prefer to self-host. Timeline is approximately 20 business days — 10 days for a working draft, then 10 days for unlimited revisions.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I own my website?</summary>
+          <p>Yes. You own the site outright once the build is complete and paid in full. Huginn does not retain ownership. After finalisation, changes aren't included in the build fee — add a care plan for ongoing updates, or pay a one-off $99 change window (10 business days) for a short round of edits.</p>
+        </details>
+        <details class="faq-item">
+          <summary>When do I need a care plan?</summary>
+          <p>If you plan to update your site regularly after launch. The one-off build fee covers domain, hosting setup, and going live — not ongoing edits. If you only need changes once in a while, a one-off $99 change window (10 business days) is available without subscribing to a care plan.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens after my site is finalised?</summary>
+          <p>Once you sign off on the final version, the build phase is complete and no further changes are included. Need edits later? Either purchase a care plan for ongoing updates, or a one-off $99 change window — 10 business days to request and approve revisions.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do deposits work?</summary>
+          <p>Each build package has a deposit to secure your slot: $20 for Starter (limited special), $50 for Growth, and $100 for Pro. Deposits are paid via Stripe checkout. The remaining balance is due before launch.</p>
+        </details>
+        <details class="faq-item">
           <summary>What types of businesses does Huginn work with?</summary>
           <p>Service businesses, SaaS and software companies, e-commerce brands, and professional services firms that need a custom site — not a template — with lead capture, SEO, and room to grow.</p>
         </details>
@@ -1871,15 +2139,27 @@
         </details>
         <details class="faq-item">
           <summary>How much does a custom website cost?</summary>
-          <p>Build packages start from $20 for Starter during our limited special (domain cost only — regular $499), $2,999 for Growth (custom design and CMS), and $9,999 for Pro bespoke builds. Care plans run from $99–$1,249/month, with 6- and 12-month subscriptions available (12 months save 20%).</p>
+          <p>Build packages start from $20 for Starter during our limited special (domain + going live — regular $499), $2,999 for Growth (custom design and CMS), and $9,999 for Pro bespoke builds. Care plans run from $99–$1,249/month if you need ongoing updates, with 6- and 12-month subscriptions available (12 months save 20%).</p>
         </details>
         <details class="faq-item">
           <summary>What is included in a website care plan?</summary>
-          <p>Essentials covers hosting, security updates, daily backups, and uptime monitoring. Growth adds monthly content updates, SEO reporting, and analytics review. Partner includes ongoing optimisation, lead-generation support, and priority changes.</p>
+          <p>Essentials covers hosting, security updates, daily backups, and uptime monitoring. Growth adds monthly content updates, SEO reporting, and performance review. Partner includes ongoing optimisation, lead-generation support, and priority changes. Not ready for a subscription? A one-off $99 change window (10 business days) covers occasional post-launch edits without a care plan.</p>
         </details>
         <details class="faq-item">
           <summary>How long does a website build take?</summary>
-          <p>Every project follows survey, plan, build, and handover. Timeline depends on package and scope — Starter sites are typically faster; Pro builds with custom functionality take longer. You receive a site plan with pages, cost, and timeline before design starts.</p>
+          <p>Starter (tier 1) builds take approximately 20 business days — 10 days for a working draft, then 10 days for unlimited revisions. Growth and Pro timelines depend on scope; you receive a site plan with pages, cost, and timeline before design starts.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you set up Google Analytics?</summary>
+          <p>No. Analytics setup is not included in build packages — that's your responsibility if you want tracking. We do set up search console and on-page SEO so your site can be found.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I add extras like logo design or copywriting?</summary>
+          <p>Yes. Extras are optional add-ons for any package — logo design (from $99), brand kit (from $599), copywriting (from $99/page), extra pages, stock photography, business email, Google Business Profile setup, and more. We add them to your build invoice when we quote the project — not as separate cart items at checkout.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I make changes without a care plan?</summary>
+          <p>Yes. If your site is already finalised and you haven't purchased a care plan, a one-off <strong>$99 change window</strong> covers revisions for <strong>10 business days</strong>. For regular or ongoing updates, a monthly care plan is the better fit.</p>
         </details>
         <details class="faq-item">
           <summary>Do you build e-commerce and SaaS websites?</summary>
@@ -1893,12 +2173,12 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div class="section-label mono">Get started</div>
-        <h2 id="contact-heading" class="section-title">Request a free site plan.</h2>
-        <p class="section-desc">A short, no-obligation outline of what your site should include and what it would cost — usually back within two business days.</p>
+        <h2 id="contact-heading" class="section-title">Make a deposit or ask a question.</h2>
+        <p class="section-desc">Pay a deposit via Stripe to secure your build slot, or send a quick message — we'll reply within two business days.</p>
       </div>
       <div class="contact-layout">
-        <form class="form-card reveal" action="https://formsubmit.co/huginnweb1@gmail.com" method="POST" enctype="multipart/form-data" aria-label="Site plan request form">
-          <input type="hidden" name="_subject" value="Site plan request — Huginn website" />
+        <form id="contact-form" class="form-card reveal" action="https://formsubmit.co/huginnweb1@gmail.com" method="POST" aria-label="Contact form">
+          <input type="hidden" name="_subject" value="Huginn website enquiry" />
           <input type="hidden" name="_next" value="https://www.huginnweb.com/thank-you" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_autoresponse" value="Thank you for your enquiry. A member of the Huginn team will get back to you shortly." />
@@ -1912,34 +2192,30 @@
             <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
           </div>
           <div class="field">
-            <label class="mono" for="business">Business name</label>
-            <input id="business" name="business" type="text" placeholder="Trading name" autocomplete="organization" />
-          </div>
-          <div class="field">
-            <label class="mono" for="trade">Industry / business type</label>
-            <select id="trade" name="trade">
-              <option>Service business</option>
-              <option>SaaS / software</option>
-              <option>E-commerce</option>
-              <option>Professional services</option>
-              <option>Other</option>
+            <label class="mono" for="package">Interested in</label>
+            <select id="package" name="package" required>
+              <option value="">Select a package</option>
+              <option>Starter — $20 deposit (limited special)</option>
+              <option>Growth — $50 deposit</option>
+              <option>Pro — $100 deposit</option>
+              <option>Extras / add-ons</option>
+              <option>Change window — $99 (10 business days)</option>
+              <option>Care plan</option>
+              <option>General question</option>
             </select>
           </div>
           <div class="field">
-            <label class="mono" for="message">What do you need?</label>
-            <textarea id="message" name="message" rows="4" placeholder="New site, redesign, ongoing care…"></textarea>
+            <label class="mono" for="message">Message <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+            <textarea id="message" name="message" rows="3" placeholder="Brief note about your project…"></textarea>
           </div>
-          <div class="field">
-            <label class="mono" for="scope">Scope attachment</label>
-            <input id="scope" name="scope" type="file" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg,.webp" />
-            <span class="field-hint">Optional brief, sitemap, or reference doc — PDF, Word, or images, max 5MB.</span>
-          </div>
-          <button class="btn btn-primary" type="submit" style="width:100%;">Send request</button>
+          <button class="btn btn-primary" type="submit" style="width:100%;">Send message</button>
+          <p class="field-hint" style="margin-top:14px;text-align:center;">Prefer to pay now? Use the deposit buttons in <a href="#packages" style="text-decoration:underline;">Build packages</a>.</p>
         </form>
         <div class="contact-aside reveal">
-          <h3>What happens next</h3>
-          <p>We'll reply with a short site plan — the pages we'd recommend, roughly what it'll cost, and how long it'll take.</p>
-          <p>No obligation, no hard sell. If it's not the right fit, you'll still walk away with a clear plan.</p>
+          <h3>Deposits via Stripe</h3>
+          <p><strong>$20</strong> Starter · <strong>$50</strong> Growth · <strong>$100</strong> Pro — each secures your build slot. Balance due before launch.</p>
+          <h3 style="margin-top:24px;">What happens next</h3>
+          <p>After your deposit, we'll confirm scope and timeline. Starter builds run ~20 business days (10 draft + 10 revisions). You own the site at handover. Need changes later? $99 change window (10 business days) or a care plan.</p>
           <div class="region">
             <span class="mono">Service area</span>
             <p>Remote-first — working with clients across Australia and the United States.</p>
@@ -2038,6 +2314,15 @@
       updateCarePrices(btn.dataset.billing);
     });
   });
+
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'contact_form' });
+      }
+    });
+  }
 </script>
 
 <script src="site-promo.js"></script>
