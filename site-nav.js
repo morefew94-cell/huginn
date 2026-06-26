@@ -30,13 +30,13 @@ if (menuBtn && mobileNav) {
     <div class="promo-backdrop" data-promo-close></div>
     <div class="promo-dialog">
       <button type="button" class="promo-close" data-promo-close aria-label="Close promotion">&times;</button>
-      <span class="promo-label mono">Limited special</span>
-      <h2 id="promo-title">Starter website for domain cost only</h2>
-      <p>Tier 1 build — up to 5 pages, mobile-first design, lead capture, SEO and analytics setup. Pay domain registration cost and we handle the rest.</p>
+      <span class="promo-label mono">Limited time offer</span>
+      <h2 id="promo-title">Pay the domain fee. Get a website.</h2>
+      <p>Limited-time offer — pay just the domain registration fee and we'll build your Starter site. Up to 5 pages, mobile-first design, lead capture, SEO and analytics setup included.</p>
       <div class="promo-price">
         <span class="was">$499</span>
         <span class="now">$20</span>
-        <span class="note">1st-year domain included · limited availability</span>
+        <span class="note">Domain fee only · limited time · 1st-year domain included</span>
       </div>
       <div class="promo-actions">
         <a class="btn-primary" href="/#contact">Claim the special</a>
