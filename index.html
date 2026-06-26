@@ -887,19 +887,23 @@
       transition: all 0.2s var(--ease);
     }
 
-    .plan-cta:hover {
-      background: var(--gold-dim);
-      border-color: var(--gold);
-    }
-
-    .plan.featured .plan-cta {
+    #packages .plan-cta,
+    #care .plan-cta {
       background: linear-gradient(135deg, #c4aa72 0%, #9a8450 100%);
       border-color: transparent;
       color: var(--void);
     }
 
-    .plan.featured .plan-cta:hover {
+    #packages .plan-cta:hover,
+    #care .plan-cta:hover {
       filter: brightness(1.08);
+      background: linear-gradient(135deg, #c4aa72 0%, #9a8450 100%);
+      border-color: transparent;
+    }
+
+    .plan-cta:hover {
+      background: var(--gold-dim);
+      border-color: var(--gold);
     }
 
     .care-section {
