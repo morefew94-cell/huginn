@@ -1,12 +1,16 @@
 /**
- * Stripe Price IDs — paste live IDs from Vercel env / Stripe Dashboard.
+ * Stripe checkout — Price IDs are server-side only (Vercel env vars).
  * Reference: vercel-env-deposits.example
- *
- * Deposits: Starter $20 · Growth $150 (5%) · Pro $500 (5%) · Change window $99
  */
-window.HUGINN_STRIPE_PRICE_IDS = {
-  starterDeposit: 'price_REPLACE_STARTER_20',
-  growthDeposit: 'price_REPLACE_GROWTH_150',
-  proDeposit: 'price_REPLACE_PRO_500',
-  changeWindow: 'price_REPLACE_CHANGE_99',
+window.HUGINN_CHECKOUT = {
+  starter: '/api/checkout?tier=starter',
+  growth: '/api/checkout?tier=growth',
+  pro: '/api/checkout?tier=pro',
+  changeWindow: '/api/checkout?tier=changeWindow',
 };
+
+document.querySelectorAll('[data-stripe-deposit]').forEach((el) => {
+  const tier = el.getAttribute('data-stripe-deposit');
+  const url = window.HUGINN_CHECKOUT[tier];
+  if (url) el.href = url;
+});

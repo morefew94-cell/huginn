@@ -1,6 +1,9 @@
 # Copy into Vercel → Settings → Environment Variables
 # Stripe Dashboard → Products → [product] → Pricing → Price ID (price_...)
 
+# Required — Stripe secret key (Dashboard → Developers → API keys)
+STRIPE_SECRET_KEY=sk_live_
+
 # Starter deposit — $20 (limited special)
 HUGINN_STRIPE_PRICE_STARTER_DEPOSIT=price_
 

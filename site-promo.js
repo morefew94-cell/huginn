@@ -20,7 +20,7 @@
         <span class="note">Deposit · domain + going live · ~20 business days</span>
       </div>
       <div class="promo-actions">
-        <a class="btn-primary" href="https://buy.stripe.com/REPLACE_STARTER_DEPOSIT_20">Make a $20 deposit</a>
+        <a class="btn-primary" href="/api/checkout?tier=starter">Make a $20 deposit</a>
         <a class="btn-ghost" href="/#packages">View packages</a>
       </div>
     </div>

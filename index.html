@@ -1910,7 +1910,7 @@
             <li>Hosted and live on the internet</li>
             <li>You own the site outright</li>
           </ul>
-          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_STARTER_DEPOSIT_20" data-stripe-deposit="starter">Make a $20 deposit</a>
+          <a class="plan-cta" href="/api/checkout?tier=starter" data-stripe-deposit="starter">Make a $20 deposit</a>
           <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
 
@@ -1928,7 +1928,7 @@
             <li>SEO &amp; structured data</li>
             <li>Everything in Starter</li>
           </ul>
-          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_GROWTH_DEPOSIT_150" data-stripe-deposit="growth">Make a $150 deposit</a>
+          <a class="plan-cta" href="/api/checkout?tier=growth" data-stripe-deposit="growth">Make a $150 deposit</a>
           <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
 
@@ -1945,7 +1945,7 @@
             <li>E-commerce, SaaS or membership ready</li>
             <li>Everything in Growth</li>
           </ul>
-          <a class="plan-cta" href="https://buy.stripe.com/REPLACE_PRO_DEPOSIT_500" data-stripe-deposit="pro">Make a $500 deposit</a>
+          <a class="plan-cta" href="/api/checkout?tier=pro" data-stripe-deposit="pro">Make a $500 deposit</a>
           <span class="plan-deposit-hint">Deposit secures your build slot · balance due before launch</span>
         </article>
       </div>
@@ -2325,6 +2325,7 @@
   }
 </script>
 
+<script src="stripe-deposits.js"></script>
 <script src="site-promo.js"></script>
 
 </body>
