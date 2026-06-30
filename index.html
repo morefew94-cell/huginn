@@ -1363,6 +1363,15 @@
       opacity: 1;
     }
 
+    .client-logos-row img.butterfly-logo {
+      height: 72px;
+      min-width: 72px;
+      max-width: 120px;
+      padding: 6px 10px;
+      background: #000;
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+
     .work-client-logo {
       height: 36px;
       width: auto;
@@ -1373,6 +1382,14 @@
       background: rgba(255, 255, 255, 0.96);
       border: 1px solid var(--border);
       border-radius: var(--radius);
+    }
+
+    .work-client-logo.butterfly-logo {
+      height: 52px;
+      max-width: 120px;
+      padding: 6px 10px;
+      background: #000;
+      border-color: rgba(255, 255, 255, 0.14);
     }
 
     .plan-includes-note {
@@ -1765,7 +1782,7 @@
     <div class="wrap reveal">
       <div class="section-label mono">Selected clients</div>
       <div class="client-logos-row">
-        <img src="assets/clients/butterfly-beauty-logo.png" alt="Butterfly Beauty" width="200" height="52" loading="lazy" />
+        <img class="butterfly-logo" src="assets/clients/butterfly-beauty-logo.png" alt="Butterfly Beauty by Kate" width="120" height="72" loading="lazy" />
         <img src="assets/clients/ibuild-pm-logo.png" alt="iBuild PM" width="200" height="52" loading="lazy" />
         <img src="assets/clients/veridian-ims-logo.png" alt="Veridian IMS" width="200" height="52" loading="lazy" />
       </div>
@@ -1823,7 +1840,7 @@
             </div>
           </div>
           <div class="work-body">
-            <img class="work-client-logo" src="assets/clients/butterfly-beauty-logo.png" alt="Butterfly Beauty logo" width="180" height="36" loading="lazy" />
+            <img class="work-client-logo butterfly-logo" src="assets/clients/butterfly-beauty-logo.png" alt="Butterfly Beauty by Kate logo" width="120" height="52" loading="lazy" />
             <div class="work-meta">
               <span class="work-tag">Beauty &amp; wellness</span>
               <span class="work-tag">Australia</span>
