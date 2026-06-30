@@ -18,8 +18,9 @@ const server = createServer(async (req, res) => {
     res.end(html);
     return;
   }
-  if (url.startsWith('/butterfly/')) {
-    const filePath = path.join(root, 'assets', 'clients', url.slice(1));
+  const clientFile = url.replace(/^\//, '');
+  if (clientFile === 'butterfly-beauty-logo.png' || clientFile.startsWith('butterfly/')) {
+    const filePath = path.join(root, 'assets', 'clients', clientFile);
     try {
       const data = await readFile(filePath);
       const ext = path.extname(filePath).toLowerCase();
