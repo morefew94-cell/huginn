@@ -97,7 +97,7 @@ def nav_html(base: str, wide: bool = True) -> str:
         <a href="{hash_('faq')}"><strong>FAQ</strong></a>
       </details>
       <a href="{hash_('contact')}">Contact</a>
-      <a class="mobile-nav-cta" href="{hash_('packages')}">Pay now</a>
+      <a class="mobile-nav-cta" href="{hash_('packages')}">Reserve my build</a>
     </nav>"""
 
     brand_href = "/" if is_home else f"{base}index.html"
@@ -111,7 +111,7 @@ def nav_html(base: str, wide: bool = True) -> str:
         <img src="{logo_src}" alt="Huginn — web design and development" />
       </a>
 {desktop}
-      <a class="nav-cta" href="{cta_href}">Pay now</a>
+      <a class="nav-cta" href="{cta_href}">Reserve my build</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
     </div>
 {mobile}
