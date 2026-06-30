@@ -1,4 +1,5 @@
 @import url('site-promo.css');
+@import url('site-nav.css');
 
 :root {
   --void: #08090c;
@@ -18,6 +19,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+section[id],
+.plan {
+  scroll-margin-top: 88px;
+}
 body {
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 1rem;

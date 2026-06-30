@@ -17,7 +17,40 @@ if (menuBtn && mobileNav) {
   });
 }
 
-(function () {
+(function initNavDropdowns() {
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  if (!dropdowns.length) return;
+
+  function closeAll(except) {
+    dropdowns.forEach(dropdown => {
+      if (dropdown === except) return;
+      dropdown.classList.remove('open');
+      const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', event => {
+      event.stopPropagation();
+      const open = dropdown.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', open);
+      if (open) closeAll(dropdown);
+    });
+  });
+
+  document.addEventListener('click', () => closeAll());
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeAll();
+  });
+})();
+
+(function initSubpagePromo() {
+  if (document.body.dataset.page === 'home') return;
+
   const STORAGE_KEY = 'huginn-promo-seen';
   if (sessionStorage.getItem(STORAGE_KEY)) return;
 

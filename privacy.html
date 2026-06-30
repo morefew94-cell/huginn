@@ -17,60 +17,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-promo.css" />
+  <link rel="stylesheet" href="subpage.css" />
   <style>
-    :root {
-      --void: #08090c;
-      --deep: #0f1117;
-      --surface: #161a24;
-      --border: rgba(196, 206, 220, 0.12);
-      --silver: #c8d0dc;
-      --mist: #8a95a8;
-      --frost: #e8ecf2;
-      --accent: #9eb4d4;
-      --gold: #b8a06a;
-      --radius: 6px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'DM Sans', system-ui, sans-serif;
-      font-size: 1rem;
-      line-height: 1.7;
-      color: var(--silver);
-      background: var(--void);
-    }
-    h1, h2 {
-      font-family: 'Cinzel', Georgia, serif;
-      color: var(--frost);
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-    .mono {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--gold); }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-    header {
-      border-bottom: 1px solid var(--border);
-      background: rgba(8, 9, 12, 0.92);
-      padding: 18px 0;
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--frost);
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      font-size: 0.95rem;
-    }
-    .brand img { height: 40px; width: auto; }
-    main { padding: 56px 0 80px; }
+    .wrap { max-width: 720px; }
     h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 12px; }
     .updated { color: var(--mist); font-size: 0.88rem; margin-bottom: 40px; }
     h2 { font-size: 1.1rem; margin: 36px 0 12px; }
@@ -103,11 +52,101 @@
 </head>
 <body>
 
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
 <header>
-  <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Huginn home">
-      <img src="huginn-logo.png" alt="Huginn" />
-    </a>
+  <div class="wrap-wide">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Huginn home">
+        <img src="huginn-logo.png" alt="Huginn — web design and development" />
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Work</button>
+          <div class="nav-dropdown-menu" role="menu">
+            <span class="nav-dropdown-label mono">Case studies</span>
+            <a href="case-studies/butterfly-beauty.html" role="menuitem"><strong>Butterfly Beauty</strong><span class="nav-dropdown-desc">Starter tier · beauty &amp; wellness website</span></a>
+            <a href="case-studies/ibuild-pm.html" role="menuitem"><strong>iBuild PM</strong><span class="nav-dropdown-desc">Pro · industrial services &amp; portals</span></a>
+            <a href="case-studies/veridian-ims.html" role="menuitem"><strong>Veridian IMS</strong><span class="nav-dropdown-desc">Pro · SaaS product &amp; Stripe checkout</span></a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="index.html#work" role="menuitem"><strong>View all work</strong><span class="nav-dropdown-desc">Portfolio &amp; client screenshots</span></a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Packages</button>
+          <div class="nav-dropdown-menu" role="menu">
+            <span class="nav-dropdown-label mono">Build packages</span>
+            <a href="index.html#plan-starter" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit · up to 5 pages · domain included</span></a>
+            <a href="index.html#plan-growth" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · custom design, CMS &amp; lead flows</span></a>
+            <a href="index.html#plan-pro" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · Next.js, portals &amp; integrations</span></a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="index.html#extras" role="menuitem"><strong>Extras &amp; add-ons</strong><span class="nav-dropdown-desc">Logo design, copywriting, SEO setup &amp; more</span></a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Services</button>
+          <div class="nav-dropdown-menu" role="menu">
+            <span class="nav-dropdown-label mono">By market &amp; industry</span>
+            <a href="web-design-australia.html" role="menuitem"><strong>Web design Australia</strong><span class="nav-dropdown-desc">Custom sites for Australian businesses · AUD pricing</span></a>
+            <a href="web-development-usa.html" role="menuitem"><strong>Web development USA</strong><span class="nav-dropdown-desc">Marketing sites &amp; web apps for US clients</span></a>
+            <a href="saas-website-design.html" role="menuitem"><strong>SaaS website design</strong><span class="nav-dropdown-desc">Product sites, pricing pages &amp; trial signup</span></a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="index.html#care" role="menuitem"><strong>Website care plans</strong><span class="nav-dropdown-desc">Hosting, updates &amp; ongoing support</span></a>
+            <a href="index.html#process" role="menuitem"><strong>Our process</strong><span class="nav-dropdown-desc">Survey, plan, build &amp; handover</span></a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Resources</button>
+          <div class="nav-dropdown-menu" role="menu">
+            <span class="nav-dropdown-label mono">Guides &amp; blog</span>
+            <a href="blog/index.html" role="menuitem"><strong>Blog</strong><span class="nav-dropdown-desc">Website cost, care plans &amp; SaaS tips</span></a>
+            <a href="blog/website-cost-australia.html" role="menuitem"><strong>Website cost in Australia</strong><span class="nav-dropdown-desc">What to budget for a custom site</span></a>
+            <a href="blog/care-plan-vs-diy.html" role="menuitem"><strong>Care plan vs DIY</strong><span class="nav-dropdown-desc">When to pay for hosting &amp; updates</span></a>
+            <a href="blog/saas-landing-page-checklist.html" role="menuitem"><strong>SaaS landing page checklist</strong><span class="nav-dropdown-desc">Convert trials into revenue</span></a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="index.html#faq" role="menuitem"><strong>FAQ</strong><span class="nav-dropdown-desc">Pricing, deposits, ownership &amp; timelines</span></a>
+          </div>
+        </div>
+        <a class="nav-link-direct" href="index.html#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="index.html#packages">Make a deposit</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+      <details class="mobile-nav-group">
+        <summary>Work</summary>
+        <a href="case-studies/butterfly-beauty.html"><strong>Butterfly Beauty</strong><span class="nav-dropdown-desc">Starter tier case study</span></a>
+        <a href="case-studies/ibuild-pm.html"><strong>iBuild PM</strong><span class="nav-dropdown-desc">Industrial services case study</span></a>
+        <a href="case-studies/veridian-ims.html"><strong>Veridian IMS</strong><span class="nav-dropdown-desc">SaaS product case study</span></a>
+        <a href="index.html#work"><strong>View all work</strong></a>
+      </details>
+      <details class="mobile-nav-group">
+        <summary>Packages</summary>
+        <a href="index.html#plan-starter"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit</span></a>
+        <a href="index.html#plan-growth"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 custom design</span></a>
+        <a href="index.html#plan-pro"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 bespoke build</span></a>
+        <a href="index.html#extras"><strong>Extras &amp; add-ons</strong></a>
+      </details>
+      <details class="mobile-nav-group">
+        <summary>Services</summary>
+        <a href="web-design-australia.html"><strong>Web design Australia</strong></a>
+        <a href="web-development-usa.html"><strong>Web development USA</strong></a>
+        <a href="saas-website-design.html"><strong>SaaS website design</strong></a>
+        <a href="index.html#care"><strong>Care plans</strong></a>
+        <a href="index.html#process"><strong>Process</strong></a>
+      </details>
+      <details class="mobile-nav-group">
+        <summary>Resources</summary>
+        <a href="blog/index.html"><strong>Blog</strong></a>
+        <a href="blog/website-cost-australia.html"><strong>Website cost Australia</strong></a>
+        <a href="blog/care-plan-vs-diy.html"><strong>Care plan vs DIY</strong></a>
+        <a href="blog/saas-landing-page-checklist.html"><strong>SaaS landing page checklist</strong></a>
+        <a href="index.html#faq"><strong>FAQ</strong></a>
+      </details>
+      <a href="index.html#contact">Contact</a>
+      <a class="mobile-nav-cta" href="index.html#packages">Make a deposit</a>
+    </nav>
   </div>
 </header>
 
@@ -171,6 +210,6 @@
   </div>
 </footer>
 
-<script src="site-promo.js"></script>
+<script src="site-nav.js"></script>
 </body>
 </html>
