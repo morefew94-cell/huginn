@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 def nav_html(base: str, wide: bool = True) -> str:
     """base: '' for homepage, '../' for blog/ and case-studies/."""
     is_home = base == "" and not wide
+    pkg = f"{base}packages"
     ix = "" if is_home else f"{base}index.html"
     hash_ = (lambda frag: f"#{frag}") if is_home else (lambda frag: f"{ix}#{frag}")
     cs = f"{base}case-studies"
@@ -31,11 +32,11 @@ def nav_html(base: str, wide: bool = True) -> str:
           <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Packages</button>
           <div class="nav-dropdown-menu" role="menu">
             <span class="nav-dropdown-label mono">Build packages</span>
-            <a href="{hash_('plan-starter')}" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit · up to 5 pages · domain included</span></a>
-            <a href="{hash_('plan-growth')}" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · custom design, CMS &amp; lead flows</span></a>
-            <a href="{hash_('plan-pro')}" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · Next.js, portals &amp; integrations</span></a>
+            <a href="{pkg}/starter.html" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit · up to 5 pages · domain included</span></a>
+            <a href="{pkg}/growth.html" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · custom design, CMS &amp; lead flows</span></a>
+            <a href="{pkg}/pro.html" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · Next.js, portals &amp; integrations</span></a>
             <div class="nav-dropdown-divider"></div>
-            <a href="{hash_('extras')}" role="menuitem"><strong>Extras &amp; add-ons</strong><span class="nav-dropdown-desc">Logo design, copywriting, SEO setup &amp; more</span></a>
+            <a href="{pkg}/extras.html" role="menuitem"><strong>Extras &amp; add-ons</strong><span class="nav-dropdown-desc">Logo design, copywriting, SEO setup &amp; more</span></a>
           </div>
         </div>
         <div class="nav-dropdown">
@@ -75,10 +76,10 @@ def nav_html(base: str, wide: bool = True) -> str:
       </details>
       <details class="mobile-nav-group">
         <summary>Packages</summary>
-        <a href="{hash_('plan-starter')}"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit</span></a>
-        <a href="{hash_('plan-growth')}"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 custom design</span></a>
-        <a href="{hash_('plan-pro')}"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 bespoke build</span></a>
-        <a href="{hash_('extras')}"><strong>Extras &amp; add-ons</strong></a>
+        <a href="{pkg}/starter.html"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit</span></a>
+        <a href="{pkg}/growth.html"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 custom design</span></a>
+        <a href="{pkg}/pro.html"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 bespoke build</span></a>
+        <a href="{pkg}/extras.html"><strong>Extras &amp; add-ons</strong></a>
       </details>
       <details class="mobile-nav-group">
         <summary>Services</summary>
