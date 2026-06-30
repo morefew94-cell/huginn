@@ -94,7 +94,7 @@ if (menuBtn && mobileNav) {
       <div class="promo-price">
         <span class="was">$499</span>
         <span class="now">$20</span>
-        <span class="note">Deposit · domain + going live · ~20 business days</span>
+        <span class="note">Deposit · domain + going live · ~20-30 business days</span>
       </div>
       <div class="promo-actions">
         <a class="btn-primary" href="/api/checkout?tier=starter">Reserve my build</a>

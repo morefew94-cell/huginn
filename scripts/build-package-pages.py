@@ -107,7 +107,7 @@ STARTER = shell(
       <p class="price-note">Balance due before launch · domain (1st year) and hosting setup included · you own the site outright</p>
     </div>
 
-    <p>Best for local service businesses, studios, trades, and professionals who need a credible online presence without complex integrations. Typical timeline: <strong>~20 business days</strong> — 10 days for a working draft, then 10 days for unlimited revisions.</p>
+    <p>Best for local service businesses, studios, trades, and professionals who need a credible online presence without complex integrations. Typical timeline: <strong>~20 business days</strong> (Starter tier — builds overall run ~20-30 business days depending on package).</p>
 
     <div class="scope-grid">
       <div class="scope-card included">
@@ -178,7 +178,7 @@ GROWTH = shell(
       <p class="price-note">Balance due before launch · domain, hosting setup, and going live included · you own the site outright</p>
     </div>
 
-    <p>Best for established service businesses, professional firms, and growing brands that need custom design, a blog or CMS, and structured lead flows. Timeline depends on scope — you receive a site plan with pages, cost, and schedule before design starts.</p>
+    <p>Best for established service businesses, professional firms, and growing brands that need custom design, a blog or CMS, and structured lead flows. Typical timeline: <strong>~20-25 business days</strong> — confirmed in your site plan before design starts.</p>
 
     <div class="scope-grid">
       <div class="scope-card included">
@@ -248,7 +248,7 @@ PRO = shell(
       <p class="price-note">Balance due before launch · domain, hosting setup, and going live included · you own the site outright</p>
     </div>
 
-    <p>Best for SaaS products, e-commerce brands, membership businesses, and industrial or professional services that need authenticated areas, databases, or third-party integrations. Scope is defined in a detailed site plan before build starts.</p>
+    <p>Best for SaaS products, e-commerce brands, membership businesses, and industrial or professional services that need authenticated areas, databases, or third-party integrations. Typical timeline: <strong>~25-30 business days</strong> — scope and schedule defined in a detailed site plan before build starts.</p>
 
     <div class="scope-grid">
       <div class="scope-card included">
