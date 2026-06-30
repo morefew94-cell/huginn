@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" role="img" aria-label="Butterfly Beauty">
-  <text x="0" y="34" font-family="Georgia, serif" font-size="28" fill="#c9a0a8">Butterfly Beauty</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="Butterfly Beauty">
+  <circle cx="22" cy="24" r="18" fill="#c9a0a8"/>
+  <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#ffffff">✦</text>
+  <text x="50" y="22" font-family="Georgia, serif" font-size="20" fill="#3d2c2e">Butterfly Beauty</text>
+  <text x="50" y="38" font-family="Arial, sans-serif" font-size="8" letter-spacing="2" fill="#7a6366">STUDIO &amp; WELLNESS</text>
 </svg>
