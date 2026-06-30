@@ -47,8 +47,8 @@ def nav_html(base: str, wide: bool = True) -> str:
             <a href="{base}web-development-usa.html" role="menuitem"><strong>Web development USA</strong><span class="nav-dropdown-desc">Marketing sites &amp; web apps for US clients</span></a>
             <a href="{base}saas-website-design.html" role="menuitem"><strong>SaaS website design</strong><span class="nav-dropdown-desc">Product sites, pricing pages &amp; trial signup</span></a>
             <div class="nav-dropdown-divider"></div>
-            <a href="{hash_('care')}" role="menuitem"><strong>Website care plans</strong><span class="nav-dropdown-desc">Hosting, updates &amp; ongoing support</span></a>
-            <a href="{hash_('process')}" role="menuitem"><strong>Our process</strong><span class="nav-dropdown-desc">Survey, plan, build &amp; handover</span></a>
+            <a href="{base}care-plans.html" role="menuitem"><strong>Website care plans</strong><span class="nav-dropdown-desc">Hosting, updates &amp; ongoing support</span></a>
+            <a href="{base}our-process.html" role="menuitem"><strong>Our process</strong><span class="nav-dropdown-desc">Survey, plan, build &amp; handover</span></a>
           </div>
         </div>
         <div class="nav-dropdown">
@@ -86,8 +86,8 @@ def nav_html(base: str, wide: bool = True) -> str:
         <a href="{base}web-design-australia.html"><strong>Web design Australia</strong></a>
         <a href="{base}web-development-usa.html"><strong>Web development USA</strong></a>
         <a href="{base}saas-website-design.html"><strong>SaaS website design</strong></a>
-        <a href="{hash_('care')}"><strong>Care plans</strong></a>
-        <a href="{hash_('process')}"><strong>Process</strong></a>
+        <a href="{base}care-plans.html"><strong>Care plans</strong></a>
+        <a href="{base}our-process.html"><strong>Process</strong></a>
       </details>
       <details class="mobile-nav-group">
         <summary>Resources</summary>

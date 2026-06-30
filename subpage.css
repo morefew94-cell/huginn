@@ -502,6 +502,114 @@ main > .wrap > p > a:hover,
   .scope-grid { grid-template-columns: 1fr; }
 }
 
+/* ===== CARE PLANS PAGE ===== */
+.billing-toggle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.billing-toggle button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: calc(var(--radius) - 2px);
+  background: transparent;
+  color: var(--mist);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.billing-toggle button:hover { color: var(--frost); }
+
+.billing-toggle button.active {
+  background: rgba(184, 160, 106, 0.15);
+  color: var(--gold);
+}
+
+.care-tier-price {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: var(--frost);
+  margin-bottom: 16px;
+}
+
+.care-tier-price small {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: var(--mist);
+}
+
+.care-tier-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(184, 160, 106, 0.15);
+  color: var(--gold);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== PROCESS PAGE ===== */
+.process-detail {
+  margin: 36px 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.process-detail:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.process-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.process-step-num {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  background: var(--void);
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.process-detail h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.process-detail .step-timing {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
 .case-shot {
   margin: 32px 0;
   border: 1px solid var(--border);

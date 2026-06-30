@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SaaS website design and development. Product landing pages, pricing, trial signup, Stripe checkout, and Next.js builds. Huginn — Australia &amp; US." />
+  <meta name="description" content="Website care plans from $99/mo — hosting, security updates, backups, content updates, and SEO reporting. Optional after your build is finalised." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#08090c" />
   <meta name="google-site-verification" content="r3BlNP4yPdbvOc2dqCGIzokBrElt6f1NIe89Prdp2Hs" />
-  <title>SaaS Website Design &amp; Development | Huginn</title>
-  <link rel="canonical" href="https://www.huginnweb.com/saas-website-design" />
+  <title>Website Care Plans | Huginn</title>
+  <link rel="canonical" href="https://www.huginnweb.com/care-plans" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -124,57 +124,151 @@
 
 <main>
   <div class="wrap">
-    <p class="breadcrumb"><a href="index.html">Home</a> / SaaS website design</p>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Website Care Plans</p>
 
     <div class="page-hero">
-      <span class="mono label">SaaS · B2B software</span>
-      <h1>SaaS website design that converts trials into revenue</h1>
-      <p class="lead">Product marketing sites built for SaaS and software companies — clear positioning, tiered pricing, demo and trial flows, and the technical depth to integrate with your stack. You own the site at handover.</p>
+      <span class="mono label">Care plans · USD · Optional</span>
+      <h1>The site keeps working after launch</h1>
+      <p class="lead">Care plans are optional. After your site is finalised, no further changes are included in the build fee — subscribe for ongoing hosting and updates, or use a one-off $99 change window if you only need occasional edits.</p>
     </div>
 
-    <h2>What SaaS sites need (that templates miss)</h2>
-    <p>A SaaS website isn't a brochure — it's part of your sales funnel. It needs to explain a complex product quickly, handle pricing logic, capture product-qualified leads, and often connect to billing, CRM, or a product demo. Huginn builds these flows properly, not as afterthoughts.</p>
+    <nav class="package-nav-links mono" aria-label="Care plan tiers">
+      <a href="#essentials">Essentials</a>
+      <a href="#growth">Growth</a>
+      <a href="#partner">Partner</a>
+      <a href="#change-window">Change window</a>
+    </nav>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Product positioning</h3>
-        <p>Clear hero messaging, feature sections, and use-case pages that speak to your ICP.</p>
-      </div>
-      <div class="card">
-        <h3>Pricing &amp; checkout</h3>
-        <p>Tiered plans, annual/monthly toggle, Stripe integration, and free trial signup.</p>
-      </div>
-      <div class="card">
-        <h3>Lead capture</h3>
-        <p>Demo requests, checklist downloads, and CRM-connected forms.</p>
-      </div>
-      <div class="card">
-        <h3>Technical builds</h3>
-        <p>Next.js Pro packages for product sites that need portals, auth, or custom integrations.</p>
-      </div>
+    <div class="billing-toggle" role="group" aria-label="Care plan billing period">
+      <button type="button" class="active" data-billing="monthly" aria-pressed="true">Monthly</button>
+      <button type="button" data-billing="6" aria-pressed="false">6 months</button>
+      <button type="button" data-billing="12" aria-pressed="false">12 months <small style="opacity:0.85">· save 20%</small></button>
     </div>
 
-    <h2>Recent SaaS work</h2>
-    <p><a href="case-studies/veridian-ims.html">Veridian IMS</a> — ISO compliance software with six pricing tiers, Stripe checkout, free trial flow, and clause-mapped product pages. Built to support self-serve signups and sales demos.</p>
+    <div class="extra-detail" id="essentials">
+      <h3>Essentials — keep it running</h3>
+      <p class="care-tier-price" data-care-price="99"><span class="care-amount">$99</span><small class="care-suffix">/mo</small></p>
+      <p>The basics covered so you can focus on your business — hosting, security, and backups handled on Huginn infrastructure.</p>
+      <div class="scope-grid">
+        <div class="scope-card included">
+          <h3>What's included</h3>
+          <ul class="scope-list">
+            <li>Hosting with Huginn (huginnweb.com)</li>
+            <li>Security updates for your site stack</li>
+            <li>Daily backups</li>
+            <li>Uptime monitoring</li>
+            <li>SSL certificate maintenance</li>
+            <li>Basic technical support for hosting issues</li>
+          </ul>
+        </div>
+        <div class="scope-card not-included">
+          <h3>What's not included</h3>
+          <ul class="scope-list">
+            <li>Content or design changes</li>
+            <li>SEO reporting or performance reviews</li>
+            <li>New pages or feature development</li>
+            <li>Domain renewal fees (paid to your registrar)</li>
+            <li>Third-party tool subscriptions</li>
+            <li>Email mailbox hosting fees</li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn-primary" href="index.html#contact">Get Essentials</a>
+    </div>
 
-    <h2>Packages for SaaS</h2>
-    <ul>
-      <li><strong>Growth</strong> ($2,999) — <strong>$150 deposit</strong> (5%) · custom design, CMS, signup flows, SEO &amp; structured data</li>
-      <li><strong>Pro</strong> ($9,999) — <strong>$500 deposit</strong> (5%) · Next.js, Stripe, portals, CRM &amp; API integrations</li>
-      <li><strong>Partner care plan</strong> ($1,249/mo) — optional · ongoing optimisation, content updates, and performance reporting if you plan to keep iterating</li>
-    </ul>
+    <div class="extra-detail" id="growth">
+      <span class="care-tier-badge">Most chosen</span>
+      <h3>Growth — keep it current</h3>
+      <p class="care-tier-price" data-care-price="299"><span class="care-amount">$299</span><small class="care-suffix">/mo</small></p>
+      <p>Regular updates and insight so the site keeps performing — everything in Essentials plus monthly content work and reporting.</p>
+      <div class="scope-grid">
+        <div class="scope-card included">
+          <h3>What's included</h3>
+          <ul class="scope-list">
+            <li>Everything in Essentials</li>
+            <li>Monthly content updates (scoped each month)</li>
+            <li>SEO performance reporting</li>
+            <li>Conversion and performance review</li>
+            <li>Minor layout and copy tweaks within scope</li>
+          </ul>
+        </div>
+        <div class="scope-card not-included">
+          <h3>What's not included</h3>
+          <ul class="scope-list">
+            <li>Major redesigns or new page builds</li>
+            <li>Custom development or new integrations</li>
+            <li>Unlimited same-day changes</li>
+            <li>Paid advertising management</li>
+            <li>Logo or brand kit work</li>
+            <li>Work outside the agreed monthly scope</li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn-primary" href="index.html#contact">Get Growth</a>
+    </div>
 
-    <div class="btn-row">
-      <a class="btn-primary" href="index.html#packages">Reserve my build</a>
-      <a class="btn-ghost" href="case-studies/veridian-ims.html">View Veridian IMS case study</a>
+    <div class="extra-detail" id="partner">
+      <h3>Partner — outsourced digital team</h3>
+      <p class="care-tier-price" data-care-price="1249"><span class="care-amount">$1,249</span><small class="care-suffix">/mo</small></p>
+      <p>Ongoing optimisation and priority support when you need a partner, not just a host — for businesses that treat their site as a growth channel.</p>
+      <div class="scope-grid">
+        <div class="scope-card included">
+          <h3>What's included</h3>
+          <ul class="scope-list">
+            <li>Everything in Growth</li>
+            <li>Ongoing conversion optimisation</li>
+            <li>Lead-generation campaign support</li>
+            <li>Priority support and faster change turnaround</li>
+            <li>Proactive recommendations each month</li>
+          </ul>
+        </div>
+        <div class="scope-card not-included">
+          <h3>What's not included</h3>
+          <ul class="scope-list">
+            <li>Full platform rebuilds (new Pro-tier projects)</li>
+            <li>Large-scale custom software development</li>
+            <li>Dedicated full-time staff allocation</li>
+            <li>Media buying budgets (ad spend)</li>
+            <li>Legal, compliance, or industry certification consulting</li>
+            <li>24/7 emergency on-call outside business hours</li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn-primary" href="index.html#contact">Get Partner</a>
+    </div>
+
+    <div class="extra-detail" id="change-window">
+      <h3>One-off change window — no subscription</h3>
+      <p class="care-tier-price">$99 <small>· 10 business days</small></p>
+      <p>If your site is already finalised and you don't need ongoing updates, a change window covers a short round of revisions without subscribing to a care plan.</p>
+      <div class="scope-grid">
+        <div class="scope-card included">
+          <h3>What's included</h3>
+          <ul class="scope-list">
+            <li>10 business days to request and approve revisions</li>
+            <li>Copy, image, and minor layout updates within scope</li>
+            <li>One consolidated round of changes</li>
+          </ul>
+        </div>
+        <div class="scope-card not-included">
+          <h3>What's not included</h3>
+          <ul class="scope-list">
+            <li>Hosting (must already be live or self-hosted)</li>
+            <li>New pages or major feature development</li>
+            <li>Ongoing monthly updates after the window closes</li>
+            <li>Emergency or same-day turnaround</li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn-primary" href="index.html#contact">Request a change window</a>
     </div>
 
     <div class="related">
       <h2>Related</h2>
       <ul>
-        <li><a href="web-design-australia.html">Web design Australia</a></li>
-        <li><a href="web-development-usa.html">Web development USA</a></li>
-        <li><a href="index.html#packages">All build packages</a></li>
+        <li><a href="blog/care-plan-vs-diy.html">Care plan vs DIY</a></li>
+        <li><a href="packages/starter.html">Build packages</a></li>
+        <li><a href="our-process.html">Our process</a></li>
       </ul>
     </div>
   </div>
@@ -182,7 +276,9 @@
 
 <footer>
   <div class="wrap-wide">
-    <div class="brand-footer"><img src="huginn-logo.png" alt="Huginn" /></div>
+    <div class="brand-footer">
+      <img src="huginn-logo.png" alt="Huginn" />
+    </div>
     <p class="mono">Web design &amp; development, sharpened.</p>
     <p class="mono footer-links">
       <a href="web-design-australia.html">Australia</a> ·
@@ -198,3 +294,47 @@
 <script src="site-nav.js"></script>
 </body>
 </html>
+
+<script>
+(function () {
+  const carePrices = document.querySelectorAll('[data-care-price]');
+  const billingBtns = document.querySelectorAll('[data-billing]');
+  if (!carePrices.length || !billingBtns.length) return;
+
+  function formatCarePrice(amount) {
+    return amount.toLocaleString('en-US');
+  }
+
+  function updateCarePrices(period) {
+    carePrices.forEach(el => {
+      const monthly = Number(el.dataset.carePrice);
+      const amountEl = el.querySelector('.care-amount');
+      const suffixEl = el.querySelector('.care-suffix');
+      if (!amountEl || !suffixEl) return;
+
+      if (period === 'monthly') {
+        amountEl.textContent = '$' + formatCarePrice(monthly);
+        suffixEl.textContent = '/mo';
+      } else if (period === '6') {
+        amountEl.textContent = '$' + formatCarePrice(monthly * 6);
+        suffixEl.textContent = '/6 mo';
+      } else {
+        amountEl.textContent = '$' + formatCarePrice(Math.round(monthly * 12 * 0.8));
+        suffixEl.textContent = '/yr';
+      }
+    });
+  }
+
+  billingBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      billingBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      updateCarePrices(btn.dataset.billing);
+    });
+  });
+})();
+</script>
