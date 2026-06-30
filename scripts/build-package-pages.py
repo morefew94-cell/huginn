@@ -36,7 +36,6 @@ PACKAGE_NAV = """    <nav class="package-nav-links mono" aria-label="Build packa
       <a href="growth.html"{growth_active}>Growth</a>
       <a href="pro.html"{pro_active}>Pro</a>
       <a href="extras.html"{extras_active}>Extras</a>
-      <a href="../index.html#packages">Compare on homepage</a>
     </nav>"""
 
 
