@@ -92,7 +92,7 @@ def shell(title, description, canonical_slug, body, active):
 
 STARTER = shell(
     "Starter · Tier 1 Website Package",
-    "Starter tier 1 website package — up to 5 pages, mobile-first design, lead capture, SEO setup, domain and going live included. $20 deposit (limited special).",
+    "Starter tier 1 website package — up to 5 pages, mobile-first design, lead capture, SEO setup, domain and going live included. $499 · $25 deposit (5%).",
     "starter",
     """    <div class="page-hero">
       <span class="mono label">Build package · Tier 1 · USD</span>
@@ -101,9 +101,8 @@ STARTER = shell(
     </div>
 
     <div class="package-price-banner">
-      <span class="price-was">$499</span>
-      <span class="price-main">$20</span>
-      <span class="price-deposit">deposit · limited special</span>
+      <span class="price-main">$499</span>
+      <span class="price-deposit">· $25 deposit (5%)</span>
       <p class="price-note">Balance due before launch · domain (1st year) and hosting setup included · you own the site outright</p>
     </div>
 
@@ -224,7 +223,7 @@ GROWTH = shell(
     <div class="related">
       <h2>Compare packages</h2>
       <ul>
-        <li><a href="starter.html">Starter — tier 1 foundation ($20 deposit special)</a></li>
+        <li><a href="starter.html">Starter — tier 1 foundation ($499)</a></li>
         <li><a href="pro.html">Pro — bespoke Next.js platform ($9,999)</a></li>
         <li><a href="extras.html">Extras &amp; add-ons</a></li>
       </ul>

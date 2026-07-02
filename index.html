@@ -96,9 +96,9 @@
               "description": "Tier 1 website up to 5 pages. Includes domain (1st year), hosting setup, and going live. ~20 business days (Starter). Builds typically ~20-30 business days depending on package. Customer owns the site.",
               "priceSpecification": {
                 "@type": "PriceSpecification",
-                "price": "20",
+                "price": "499",
                 "priceCurrency": "USD",
-                "description": "Limited-time special — Starter build for domain cost only. Regular price $499."
+                "description": "Starter build package — $25 deposit (5%) secures your slot; balance due before launch."
               }
             },
             {
@@ -157,7 +157,7 @@
             "name": "How do deposits work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Deposits secure your build slot: $20 Starter, $150 Growth (5%), $500 Pro (5%) via Stripe. Balance due before launch."
+              "text": "Deposits secure your build slot: $25 Starter (5% of $499), $150 Growth (5%), $500 Pro (5%) via Stripe. Balance due before launch."
             }
           },
           {
@@ -181,7 +181,7 @@
             "name": "How much does a custom website cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Build packages start from $20 for Starter during our limited special (regular $499), $2,999 for Growth, and $9,999 for Pro. Care plans from $99–$1,249/month if you need ongoing updates."
+              "text": "Build packages start from $499 for Starter, $2,999 for Growth, and $9,999 for Pro. Care plans from $99–$1,249/month if you need ongoing updates."
             }
           },
           {
@@ -257,7 +257,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="site-promo.css" />
   <link rel="stylesheet" href="site-nav.css" />
   <style>
     :root {
@@ -790,56 +789,6 @@
       color: var(--gold);
       margin-left: 0.35em;
     }
-
-    .plan-price-special .price-was {
-      display: block;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--mist);
-      text-decoration: line-through;
-      margin-bottom: 4px;
-    }
-
-    .plan-promo-note {
-      display: block;
-      margin-top: 8px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 500;
-      color: var(--gold);
-      line-height: 1.4;
-    }
-
-    .promo-strip {
-      margin-top: -32px;
-      margin-bottom: 8px;
-    }
-
-    .promo-strip p {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 10px 16px;
-      padding: 14px 20px;
-      border: 1px solid rgba(184, 160, 106, 0.35);
-      border-radius: var(--radius);
-      background: linear-gradient(90deg, rgba(184, 160, 106, 0.1), rgba(158, 180, 212, 0.06));
-      color: var(--silver);
-      font-size: 0.72rem;
-      text-align: center;
-    }
-
-    .promo-strip strong { color: var(--gold); }
-
-    .promo-strip a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .promo-strip a:hover { color: var(--gold); }
 
     .billing-toggle {
       display: inline-flex;
@@ -1760,7 +1709,7 @@
           <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Packages</button>
           <div class="nav-dropdown-menu" role="menu">
             <span class="nav-dropdown-label mono">Build packages</span>
-            <a href="packages/starter.html" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit · up to 5 pages · domain included</span></a>
+            <a href="packages/starter.html" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · $25 deposit (5%) · up to 5 pages</span></a>
             <a href="packages/growth.html" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · custom design, CMS &amp; lead flows</span></a>
             <a href="packages/pro.html" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · Next.js, portals &amp; integrations</span></a>
             <div class="nav-dropdown-divider"></div>
@@ -1806,7 +1755,7 @@
       </details>
       <details class="mobile-nav-group">
         <summary>Packages</summary>
-        <a href="packages/starter.html"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">From $20 deposit</span></a>
+        <a href="packages/starter.html"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · $25 deposit</span></a>
         <a href="packages/growth.html"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 custom design</span></a>
         <a href="packages/pro.html"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 bespoke build</span></a>
         <a href="packages/extras.html"><strong>Extras &amp; add-ons</strong></a>
@@ -1867,10 +1816,6 @@
       </div>
     </div>
   </section>
-
-  <div class="promo-strip wrap reveal">
-    <p class="mono"><strong>Limited special</strong> Tier 1 Starter website — domain + going live for <strong style="color:var(--frost);font-weight:600;">$20</strong> deposit (regular $499). <a href="packages/starter.html">View Starter package</a></p>
-  </div>
 
   <section class="client-logos" aria-label="Selected clients">
     <div class="wrap reveal">
@@ -2035,16 +1980,11 @@
       </div>
       <div class="pricing-grid">
         <article class="plan reveal" id="plan-starter">
-          <span class="plan-badge">Limited special</span>
           <div class="plan-tier mono">Starter · Tier 1</div>
           <h3>Get found, get contacted</h3>
           <p class="plan-sub">A solid foundation for businesses ready to be discovered online.</p>
-          <div class="plan-price plan-price-special">
-            <span class="price-was">$499</span>
-            $20<small class="plan-deposit-label">deposit</small>
-            <small class="plan-promo-note">Domain + going live · 1st-year domain included</small>
-          </div>
-          <p class="plan-includes-note">~20 business days (Starter) · 10 days working draft, 10 days unlimited revisions · hosted through Huginn or self-host handover</p>
+          <div class="plan-price">$499<small class="plan-deposit-label">· $25 deposit</small></div>
+          <p class="plan-includes-note">Domain + going live · 1st-year domain included · ~20 business days (Starter) · hosted through Huginn or self-host handover</p>
           <ul>
             <li>Up to 5 pages</li>
             <li>Mobile-first design</li>
@@ -2274,7 +2214,7 @@
         </details>
         <details class="faq-item">
           <summary>How do deposits work?</summary>
-          <p>Each build package has a deposit to secure your slot: $20 for Starter (limited special), $150 for Growth (5% of $2,999), and $500 for Pro (5% of $9,999). Deposits are paid via Stripe checkout. The remaining balance is due before launch.</p>
+          <p>Each build package has a deposit to secure your slot: $25 for Starter (5% of $499), $150 for Growth (5% of $2,999), and $500 for Pro (5% of $9,999). Deposits are paid via Stripe checkout. The remaining balance is due before launch.</p>
         </details>
         <details class="faq-item">
           <summary>What types of businesses does Huginn work with?</summary>
@@ -2286,7 +2226,7 @@
         </details>
         <details class="faq-item">
           <summary>How much does a custom website cost?</summary>
-          <p>Build packages start from $20 for Starter during our limited special (domain + going live — regular $499), $2,999 for Growth (custom design and CMS), and $9,999 for Pro bespoke builds. Care plans run from $99–$1,249/month if you need ongoing updates, with 6- and 12-month subscriptions available (12 months save 20%).</p>
+          <p>Build packages start from $499 for Starter (up to 5 pages, domain and going live included), $2,999 for Growth (custom design and CMS), and $9,999 for Pro bespoke builds. Care plans run from $99–$1,249/month if you need ongoing updates, with 6- and 12-month subscriptions available (12 months save 20%).</p>
         </details>
         <details class="faq-item">
           <summary>What is included in a website care plan?</summary>
@@ -2342,7 +2282,7 @@
             <label class="mono" for="package">Interested in</label>
             <select id="package" name="package" required>
               <option value="">Select a package</option>
-              <option>Starter — $20 deposit (limited special)</option>
+              <option>Starter — $25 deposit (5%)</option>
               <option>Growth — $150 deposit (5%)</option>
               <option>Pro — $500 deposit (5%)</option>
               <option>Extras / add-ons</option>
@@ -2360,7 +2300,7 @@
         </form>
         <div class="contact-aside reveal">
           <h3>Deposits via Stripe</h3>
-          <p><strong>$20</strong> Starter · <strong>$150</strong> Growth · <strong>$500</strong> Pro — each secures your build slot. Growth and Pro deposits are 5% of package price. Balance due before launch.</p>
+          <p><strong>$25</strong> Starter · <strong>$150</strong> Growth · <strong>$500</strong> Pro — each secures your build slot. All deposits are 5% of package price. Balance due before launch.</p>
           <h3 style="margin-top:24px;">What happens next</h3>
           <p>After your deposit, we'll confirm scope and timeline. Builds run ~20-30 business days depending on package. You own the site at handover. Need changes later? $99 change window (10 business days) or a care plan.</p>
           <div class="region">
@@ -2457,7 +2397,6 @@
 
 <script src="stripe-deposits.js"></script>
 <script src="site-nav.js"></script>
-<script src="site-promo.js"></script>
 
 </body>
 </html>
