@@ -5,6 +5,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+STARTER_PAGES = 5
+GROWTH_PAGES = 15
+PRO_PAGES = 30
+
 
 def nav_html(base: str, wide: bool = True) -> str:
     """base: '' for homepage, '../' for blog/ and case-studies/."""
@@ -32,9 +36,9 @@ def nav_html(base: str, wide: bool = True) -> str:
           <button type="button" class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Packages</button>
           <div class="nav-dropdown-menu" role="menu">
             <span class="nav-dropdown-label mono">Build packages</span>
-            <a href="{pkg}/starter.html" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · $25 deposit (5%) · up to 5 pages</span></a>
-            <a href="{pkg}/growth.html" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · custom design, CMS &amp; lead flows</span></a>
-            <a href="{pkg}/pro.html" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · Next.js, portals &amp; integrations</span></a>
+            <a href="{pkg}/starter.html" role="menuitem"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · $25 deposit (5%) · up to {STARTER_PAGES} pages</span></a>
+            <a href="{pkg}/growth.html" role="menuitem"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · up to {GROWTH_PAGES} pages · CMS &amp; lead flows</span></a>
+            <a href="{pkg}/pro.html" role="menuitem"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · up to {PRO_PAGES} pages · Next.js &amp; integrations</span></a>
             <div class="nav-dropdown-divider"></div>
             <a href="{pkg}/extras.html" role="menuitem"><strong>Extras &amp; add-ons</strong><span class="nav-dropdown-desc">Logo design, copywriting, SEO setup &amp; more</span></a>
           </div>
@@ -76,9 +80,9 @@ def nav_html(base: str, wide: bool = True) -> str:
       </details>
       <details class="mobile-nav-group">
         <summary>Packages</summary>
-        <a href="{pkg}/starter.html"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · $25 deposit</span></a>
-        <a href="{pkg}/growth.html"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 custom design</span></a>
-        <a href="{pkg}/pro.html"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 bespoke build</span></a>
+        <a href="{pkg}/starter.html"><strong>Starter · Tier 1</strong><span class="nav-dropdown-desc">$499 · up to {STARTER_PAGES} pages</span></a>
+        <a href="{pkg}/growth.html"><strong>Growth</strong><span class="nav-dropdown-desc">$2,999 · up to {GROWTH_PAGES} pages</span></a>
+        <a href="{pkg}/pro.html"><strong>Pro</strong><span class="nav-dropdown-desc">$9,999 · up to {PRO_PAGES} pages</span></a>
         <a href="{pkg}/extras.html"><strong>Extras &amp; add-ons</strong></a>
       </details>
       <details class="mobile-nav-group">

@@ -4,6 +4,10 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+STARTER_PAGES = 5
+GROWTH_PAGES = 15
+PRO_PAGES = 30
 OUT = ROOT / "packages"
 OUT.mkdir(exist_ok=True)
 
@@ -163,7 +167,7 @@ STARTER = shell(
 
 GROWTH = shell(
     "Growth Website Package",
-    "Growth website package — $2,999 custom design, CMS, booking and signup flows, SEO and structured data. $150 deposit. Everything in Starter included.",
+    "Growth website package — $2,999 custom design, up to 15 pages, CMS, booking and signup flows, SEO and structured data. $150 deposit. Everything in Starter included.",
     "growth",
     """    <div class="page-hero">
       <span class="mono label">Build package · Most chosen · USD</span>
@@ -184,11 +188,12 @@ GROWTH = shell(
         <h3>What's included</h3>
         <ul class="scope-list">
           <li>Everything in Starter</li>
+          <li>Up to 15 pages — structure scoped in your site plan</li>
           <li>Custom design — no off-the-shelf templates</li>
           <li>Blog or content management system you can update</li>
           <li>Booking, quote request, or signup flows</li>
           <li>SEO optimisation and structured data (schema markup)</li>
-          <li>Expanded page structure scoped in your site plan</li>
+          <li>Expanded page layouts beyond Starter's 5-page allowance</li>
           <li>Domain registration, hosting setup, and launch</li>
           <li>Revision rounds as defined in your site plan</li>
         </ul>
@@ -203,7 +208,7 @@ GROWTH = shell(
           <li>Logo, brand kit, or copywriting unless added as extras</li>
           <li>Google Analytics setup</li>
           <li>Ongoing content updates after launch (care plan or $99 change window)</li>
-          <li>Unlimited pages — scope is agreed upfront in the site plan</li>
+          <li>Pages beyond the 15-page allowance (available as extras)</li>
         </ul>
       </div>
     </div>
@@ -233,7 +238,7 @@ GROWTH = shell(
 
 PRO = shell(
     "Pro Website Package",
-    "Pro website package — $9,999 bespoke Next.js build with portals, payments, CRM and SaaS integrations. $500 deposit. Everything in Growth included.",
+    "Pro website package — $9,999 bespoke Next.js build, up to 30 pages, portals, payments, CRM and SaaS integrations. $500 deposit. Everything in Growth included.",
     "pro",
     """    <div class="page-hero">
       <span class="mono label">Build package · Bespoke · USD</span>
@@ -254,6 +259,7 @@ PRO = shell(
         <h3>What's included</h3>
         <ul class="scope-list">
           <li>Everything in Growth</li>
+          <li>Up to 30 pages — full site architecture scoped in your site plan</li>
           <li>Bespoke build on Next.js</li>
           <li>Customer, member, or staff portals with authentication</li>
           <li>Payment processing (e.g. Stripe) where scoped</li>
@@ -267,6 +273,7 @@ PRO = shell(
         <h3>What's not included</h3>
         <ul class="scope-list">
           <li>Native iOS or Android apps</li>
+          <li>Pages beyond the 30-page allowance (quoted as extras)</li>
           <li>Unlimited integrations or scope beyond the signed site plan</li>
           <li>Ongoing feature development after launch (care plan or change window)</li>
           <li>Third-party subscription fees (Stripe, hosting tiers, SaaS tools)</li>
