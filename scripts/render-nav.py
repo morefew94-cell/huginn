@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-STARTER_PAGES = 5
+STARTER_PAGES = 8
 GROWTH_PAGES = 15
 PRO_PAGES = 30
 
