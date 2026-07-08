@@ -99,7 +99,7 @@ STARTER = shell(
     "Starter tier 1 website package — up to 5 pages, mobile-first design, lead capture, SEO setup, domain and going live included. $499 · $25 deposit (5%).",
     "starter",
     """    <div class="page-hero">
-      <span class="mono label">Build package · Tier 1 · USD</span>
+      <span class="mono label">Build package · Tier 1 · AUD</span>
       <h1>Starter — get found, get contacted</h1>
       <p class="lead">A solid foundation for businesses ready to be discovered online. Up to 5 pages, mobile-first design, enquiry capture, and search setup — domain registration and going live included.</p>
     </div>
@@ -170,7 +170,7 @@ GROWTH = shell(
     "Growth website package — $2,999 custom design, up to 15 pages, CMS, booking and signup flows, SEO and structured data. $150 deposit. Everything in Starter included.",
     "growth",
     """    <div class="page-hero">
-      <span class="mono label">Build package · Most chosen · USD</span>
+      <span class="mono label">Build package · Most chosen · AUD</span>
       <h1>Growth — built to convert</h1>
       <p class="lead">Custom design and flows that turn visitors into leads. No templates — a site shaped around your business with a content system you can update and conversion paths built in.</p>
     </div>
@@ -241,7 +241,7 @@ PRO = shell(
     "Pro website package — $9,999 bespoke Next.js build, up to 30 pages, portals, payments, CRM and SaaS integrations. $500 deposit. Everything in Growth included.",
     "pro",
     """    <div class="page-hero">
-      <span class="mono label">Build package · Bespoke · USD</span>
+      <span class="mono label">Build package · Bespoke · AUD</span>
       <h1>Pro — custom-built platform</h1>
       <p class="lead">For e-commerce, SaaS, membership sites, and businesses that need more than a marketing site — bespoke Next.js builds with portals, payments, and integrations.</p>
     </div>
@@ -315,7 +315,7 @@ EXTRAS = shell(
     "Optional website extras — logo design, brand kit, copywriting, extra pages, stock photography, business email, Google Business Profile, and booking integrations. Added to your build invoice.",
     "extras",
     """    <div class="page-hero">
-      <span class="mono label">Add-ons · USD · Any package</span>
+      <span class="mono label">Add-ons · AUD · Any package</span>
       <h1>Extras for your build</h1>
       <p class="lead">Optional add-ons bolted onto Starter, Growth, or Pro — quoted upfront and added to your build invoice. Reserve your package first; extras and balance are invoiced before work starts.</p>
     </div>

@@ -78,7 +78,7 @@ CARE_PLANS = shell(
     "Website care plans from $99/mo — hosting, security updates, backups, content updates, and SEO reporting. Optional after your build is finalised.",
     "care-plans",
     """    <div class="page-hero">
-      <span class="mono label">Care plans · USD · Optional</span>
+      <span class="mono label">Care plans · AUD · Optional</span>
       <h1>The site keeps working after launch</h1>
       <p class="lead">Care plans are optional. After your site is finalised, no further changes are included in the build fee — subscribe for ongoing hosting and updates, or use a one-off $99 change window if you only need occasional edits.</p>
     </div>
